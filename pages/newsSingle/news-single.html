@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новость</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="./news-single.css">
+
+</head>
+
+<body>
+  <img src="./img/big-image.png" class="news-big_image" alt="">
+  <div class="news__single">
+    <div class="container">
+      <div class="container-sm">
+        <h1 class="c-h1">Скидка 10% на цветы к 14 февраля</h1>
+        <p class="c-p2 news__text">Уже в среду 14 февраля — День Всех Влюбленных. Чтобы порадовать любимую было проще, к
+          празднику мы
+          дарим скидку 10% на цветы и комнатные растения. Для получения скидки успейте оплатить заказ до 12 февраля
+          14:00.
+        </p>
+        <p class="news__tag">#скидки и акции</p>
+      </div>
+      <div class="container-sm">
+        <a class="news__button" href="#">посмотреть каталог</a>
+        <h2 class="c-h2">Цветы для мамы со скидкой</h2>
+      </div>
+    </div>
+
+    <div class="news-slider__wrap container">
+      <div class="news-slider swiper-container">
+
+        <!-- Картинку в слайдере заменить сниппетом из каталога -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide news-slider-snippet">
+            <img src="./img/mock-snippet.png" alt="">
+          </div>
+          <div class="swiper-slide news-slider-snippet">
+            <img src="./img/mock-snippet.png" alt="">
+          </div>
+          <div class="swiper-slide news-slider-snippet">
+            <img src="./img/mock-snippet.png" alt="">
+          </div>
+          <div class="swiper-slide news-slider-snippet">
+            <img src="./img/mock-snippet.png" alt="">
+          </div>
+          <div class="swiper-slide news-slider-snippet">
+            <img src="./img/mock-snippet.png" alt="">
+          </div>
+          <div class="swiper-slide news-slider-snippet">
+            <img src="./img/mock-snippet.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <svg class="news-slider__arrow prev" width="54" height="54" viewBox="0 0 54 54" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect width="54" height="54" rx="10" fill="#C7D2F1" />
+        <path d="M31.6286 14.6572L22.3714 27.0001L31.6286 39.3429" stroke="#70768A" stroke-width="2"
+          stroke-linecap="round" />
+      </svg>
+      <svg class="news-slider__arrow next" width="54" height="54" viewBox="0 0 54 54" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect width="54" height="54" rx="10" fill="#C7D2F1" />
+        <path d="M22.3715 39.3428L31.6286 26.9999L22.3715 14.6571" stroke="#70768A" stroke-width="2"
+          stroke-linecap="round" />
+      </svg>
+    </div>
+
+
+    <div class="news-share">
+      <p class="c-p3">Отправьте эту новость друзьям, которым она может быть интересна</p>
+      <div class="news-share__links">
+        <a href="#"><img src="../../icons/instagram.svg" alt=""></a>
+        <a href="#"><img src="../../icons/vk.svg" alt=""></a>
+        <a href="#"><img src="../../icons/ok.svg" alt=""></a>
+        <a href="#"><img src="../../icons/facebook.svg" alt=""></a>
+        <a href="#"><img src="../../icons/viber.svg" alt=""></a>
+        <a href="#"><img src="../../icons/telegram.svg" alt=""></a>
+        <a href="#"><img src="../../icons/viber.svg" alt=""></a>
+      </div>
+    </div>
+
+    <p class="container-sm c-h3 news-snippets__title">Читайте ещё</p>
+
+    <div class="news-snippets container">
+      <a href="#" class="news-snippets-item">
+        <img class="news-snippets-item__img" src="../news/img/news.png" alt="">
+        <div class="news-snippets-item__text">
+          <p class="news-snippets-item__title">Скидка 10% на цветы к 14 февраля</p>
+          <p class="news-snippets-item__tag">#скидки и акции</p>
+        </div>
+      </a>
+      <a href="#" class="news-snippets-item">
+        <img class="news-snippets-item__img" src="../news/img/news.png" alt="">
+        <div class="news-snippets-item__text">
+          <p class="news-snippets-item__title">Новогодние композиции со скидкой 15% до конца января</p>
+          <p class="news-snippets-item__tag">#скидки и акции</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./newsSingle.js"></script>
+</body>
+
+</html>

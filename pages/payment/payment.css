@@ -1,0 +1,172 @@
+.payment__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment__waysBlock {
+    width: 433px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+}
+
+.payment__waysBlock-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.payment__eripBlock {
+    width: 554px;
+}
+
+.payment__eripBlock-titleDescription {
+    margin-top: 15px;
+}
+
+.payment__cardsContainer,
+.payment__eripBlock-subtitle {
+    margin-top: 30px;
+}
+
+.payment__cardsContainer {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.payment__card {
+    width: 454px;
+    padding: 25px 25px 25px 50px;
+    margin-left: 25px;
+    position: relative;
+    border: 1px solid #70768A;
+    border-radius: 1px;
+}
+
+.payment__card-number {
+    height: 50px;
+    width: 50px;
+    background: #C7D2F1;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%); 
+}
+
+.payment__cardsDescription {
+    margin-top: 30px;
+}
+
+.payment__line {
+    height: 25px;
+    width: 1px;
+    background: #70768A;
+}
+
+@media (min-width: 1439px) {
+    .payment__waysBlock {
+        width: 367px;
+        row-gap: 50px;
+    }
+
+    .payment__waysBlock-item {
+        row-gap: 10px;
+    }
+
+    .payment__eripBlock {
+        width: 471px;
+    }
+
+    .payment__card {
+        width: 391px;
+        padding: 20px 20px 20px 40px;
+    }
+
+    .payment__eripBlock-titleDescription {
+        margin-top: 10px;
+    }
+
+    .payment__card-number {
+        height: 40px;
+        width: 40px;
+    }
+
+    .payment__cardsContainer {
+        row-gap: 10px;
+    }
+
+    .payment__cardsDescription {
+        margin-top: 20px;
+    }
+
+    .payment__line {
+        height: 20px;
+    }
+
+    .payment__cardsContainer, .payment__eripBlock-subtitle {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .payment__waysBlock {
+        width: 270px;
+        row-gap: 40px;
+    }
+
+    .payment__waysBlock-item {
+        row-gap: 5px;
+    }
+
+    .payment__eripBlock {
+        width: 330px;
+    }
+
+    .payment__card {
+        width: 280px;
+        padding: 15px 10px 15px 25px;
+    }
+
+    .payment__eripBlock-titleDescription {
+        margin-top: 5px;
+    }
+
+    .payment__card-number {
+        height: 30px;
+        width: 30px;
+    }
+
+    .payment__cardsContainer {
+        row-gap: 5px;
+    }
+
+    .payment__cardsDescription {
+        margin-top: 15px;
+    }
+
+    .payment__line {
+        height: 13px;
+    }
+
+    .payment__cardsContainer, .payment__eripBlock-subtitle {
+        margin-top: 20px;
+    }
+
+    .payment__container {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .payment__container {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}

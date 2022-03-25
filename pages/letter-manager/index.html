@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Письмо менеджеру</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    body * {
+      margin: 0;
+      font-family: 'Montserrat';
+      color: #70768A;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .letter {
+      width: 595px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 40px;
+      background: #FBF9F7;
+    }
+
+    .letter-table {
+      width: 565px;
+      margin: 30px -25px;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-spacing: 0;
+      background: #F6EEEC;
+    }
+
+    .letter-table td {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    .letter-table tr:first-child td {
+      border-top: 2px solid #EFE5E3;
+    }
+
+    .letter-table * {
+      vertical-align: top;
+    }
+
+    .p2 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+    }
+
+    .p7 {
+      font-size: 14px;
+      line-height: 150%;
+    }
+
+    .bold {
+      font-weight: 600;
+    }
+
+    .p7-mob {
+      font-size: 10px;
+      line-height: 150%;
+    }
+
+    .p5-mob {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .old-price {
+      font-weight: 400;
+      opacity: 0.68;
+      text-decoration: line-through;
+      font-size: 10px;
+      line-height: 150%;
+    }
+    .link {
+      transition: 0.3s;
+    }
+    .link:hover {
+      color: #6D86CF;
+    }
+    .link:active {
+      color: #6179BE;
+    }
+    .letter-table__title {
+      width: 230px;
+    }
+    .letter-table__price {
+      width: 130px;
+    }
+    .letter-table__counter {
+      width: 55px;
+    }
+    .letter-table__sum {
+      width: 100px;
+    }
+    .letter > .p2 .link {
+      color: #869BD8;
+    }
+    .new-price {
+      color: #869BD8;
+    }
+
+    .letter-table__title a {
+      transition: 0.3s;
+    }
+
+    .letter-table tr:hover .letter-table__title a {
+      color: #6D86CF;
+    }
+    .letter-table-result td {
+      border-top: 2px solid #EFE5E3;
+      border-bottom: 2px solid #EFE5E3;
+    }
+    .letter-table td:first-child .p5-mob:not(:last-child) {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .letter > .p2 {
+      margin-bottom: 20px;
+    }
+    .letter > .p7 {
+      margin-bottom: 10px;
+    }
+    .mb5 {
+      margin-bottom: 5px !important;
+    }
+    .border-top {
+      padding-top: 10px;
+      border-top: 1px solid #EFE5E3;
+    }
+  </style>
+</head>
+<body>
+  <div class="letter">
+    <p class="p2">Заказ <a class="link" href="#">№4621</a></p>
+    <p class="p7 mb5">Клиент: <span class="bold">Артём</span></p>
+    <p class="p7 mb5">Телефон: <span class="bold">+375 29 123-45-67</span></p>
+    <p class="p7 mb5">E-mail: <span class="bold">artiom@gmail.com</span></p>
+    <p class="p7">Комментарий: <span class="bold">просьба заказ доставить около 12.00</span></p>
+    <table class="letter-table">
+      <tr>
+        <td class="letter-table__title"><a href="#" class="p5-mob bold">Урожай цветов</a></td>
+        <td class="letter-table__price"><p class="p5-mob">56,50 руб</p></td>
+        <td class="letter-table__counter"><p class="p5-mob">1</p></td>
+        <td class="letter-table__sum"><p class="p5-mob bold">56,50 руб.</p></td>
+      </tr>
+      <tr>
+        <td class="letter-table__title">
+          <a href="#" class="p5-mob bold">Роза Кахала</a>
+          <p class="p7-mob">длина 60 см</p>
+        </td>
+        <td class="letter-table__price">
+          <p class="p5-mob new-price">4,50 руб</p>
+          <p class="old-price">6,00 руб.</p>
+        </td>
+        <td class="letter-table__counter"><p class="p5-mob">7</p></td>
+        <td class="letter-table__sum">
+          <p class="p5-mob bold new-price">31,50 руб.</p>
+          <p class="old-price">42,00 руб.</p>
+        </td>
+      </tr>
+      <tr class="letter-table-result">
+        <td>
+          <p class="p5-mob bold">Итого</p>
+          <p class="p7-mob">Вы экономите</p>
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <p class="p5-mob bold">282,50 руб.</p>
+          <p class="p7-mob">10,50 руб.</p>
+        </td>
+      </tr>
+    </table>
+    <p class="p7">Стоимость доставки: <span class="bold">бесплатно</span></p>
+    <p class="p7 border-top">Адрес доставки: <span class="bold">г. Борисов, ул. Строителей, д. 15, кв. 20, подъезд 2, этаж 3</span></p>
+    <p class="p7">Дата и время: <span class="bold">25.09.2021, 12.00–14.00</span></p>
+    <p class="p7">Способ оплаты: <span class="bold">наличными</span></p>
+    <p class="p7 border-top">Другой получатель: <span class="bold">Анастасия, +375 29 765-43-21</span></p>
+    <p class="p7">Оставаться инкогнито: <span class="bold">да</span></p>
+    <p class="p7 border-top">Текст открытки: <span class="bold">Люблю тебя, моё солнышко! Ты у меня самая лучшая на свете :)</span></p>
+  </div>
+</body>
+</html>

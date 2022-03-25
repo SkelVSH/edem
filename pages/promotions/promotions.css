@@ -1,0 +1,81 @@
+.promotion__container {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+.promotion__container:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.promotion__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 433px;
+}
+
+.promotion__container > img {
+    width: 796px;
+    height: 552px;
+}
+
+@media (max-width: 1439px) {
+        
+    .promotion__container > img {
+        width: 679px;
+        height: 471px;
+    }
+
+    
+    .promotion__content {
+        row-gap: 15px;
+        width: 367px;
+    }
+
+}
+
+@media (max-width: 1439px) {
+        
+    .promotion__container > img {
+        display: none;
+    }
+
+    .promotion__container {
+        width: 330px;
+        height: 475px;
+        background: url('./img/cardImg.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 1px;
+    }
+
+    
+    .promotion__content {
+        width: 300px;
+    }
+
+    
+    .promotion__section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .promotion__container {
+        width: 330px;
+    }
+
+    .promotion__description {
+        display: none;
+    }
+
+    .promotion__title {
+        position: absolute;
+        bottom: 30px;
+        left: 15px;
+        color: #FBF9F7;
+    }
+
+}

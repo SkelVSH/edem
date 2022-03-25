@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="../../css/swiper-bundle.css" />
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../header-footer/header-footer.css">
+  <link rel="stylesheet" href="./cart.css">
+  <link rel="stylesheet" href="./datepicker.css">
+</head>
+
+<body>
+  <header>
+
+    <div class="fullWidthContainer header">
+      <div class="container header__container">
+        <div class="header__titleBlock">
+          <img src="../../icons/logo.svg" alt="">
+          <img src="../../icons/title.svg" alt="">
+          <p>цветы и растения</p>
+        </div>
+        <div class="header__navBlock">
+          <div class="header__placeBlock">
+            <span><i class="icon icon-place"></i></span>
+            <p class="c-p5">Борисов</p>
+            <img src="../../icons/smallArrow.svg" alt="">
+          </div>
+          <div class="header__phoneBlock">
+            <span><i class="icon icon-phone"></i></span>
+            <p class="c-p5">+375 29 673-10-10</p>
+          </div>
+          <div class="header__menuBlock">
+            <!-- full или empty в зависимости от наполненности корзины -->
+            <div class="header__cart full">
+              <a class="header__cart_link" href="#">
+                <i class="icon icon-bag"></i>
+                <!-- Количество товаров в корзине -->
+                <span class="header__cart_link__quantity">2</span>
+              </a>
+              <!-- попап пустой корзины
+                        <div class="header__cart-popup">
+                            <p class="c-p3">В&nbsp;корзине пока пусто.</p>
+                            <p class="c-p3">Выберите нужные товары в&nbsp;каталоге или найдите через поиск.</p>
+                        </div>
+                        -->
+              <!-- попап полной корзины -->
+              <div class="header__cart-popup">
+                <div class="header__cart-popup-goods">
+                  <div class="header__cart-popup-goods-item">
+                    <img class="header__cart-popup-goods-item__image" src="../header-footer/img/cart/mock-image.png" alt="">
+                    <div class="header__cart-popup-goods-item-desc">
+                      <a href="#" class="c-p4 c-link">Кодиеум (Кротон)</a>
+                      <p class="c-p7">высота 70 см</p>
+                      <p class="c-p7">диаметр горшка 30 см</p>
+                      <p class="c-p7 header__cart-popup-goods-item-desc__remove">убрать</p>
+                    </div>
+                    <div class="header__cart-popup-goods-item-price">
+                      <p class="c-p4">160,00 руб.</p>
+                      <div class="header__cart-popup-goods-item-price__counter">
+                        <span class="c-p4 header__cart-popup-goods-item-price__remove">-</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__quantity">1</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__add">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__cart-popup-goods-item discounted">
+                    <img class="header__cart-popup-goods-item__image" src="../header-footer/img/cart/mock-image.png" alt="">
+                    <div class="header__cart-popup-goods-item-desc">
+                      <a href="#" class="c-p4 c-link">Кодиеум (Кротон)</a>
+                      <p class="c-p7">высота 70 см</p>
+                      <p class="c-p7">диаметр горшка 30 см</p>
+                      <p class="c-p7 header__cart-popup-goods-item-desc__remove">убрать</p>
+                    </div>
+                    <div class="header__cart-popup-goods-item-price">
+                      <p class="c-p4">160,00 руб.</p>
+                      <p class="header__cart-popup-goods-item-price__old">42,00 руб.</p>
+                      <div class="header__cart-popup-goods-item-price__counter">
+                        <span class="c-p4 header__cart-popup-goods-item-price__remove">-</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__quantity">1</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__add">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__cart-popup-goods-item">
+                    <img class="header__cart-popup-goods-item__image" src="../header-footer/img/cart/mock-image.png" alt="">
+                    <div class="header__cart-popup-goods-item-desc">
+                      <a href="#" class="c-p4 c-link">Кодиеум (Кротон)</a>
+                      <p class="c-p7">высота 70 см</p>
+                      <p class="c-p7">диаметр горшка 30 см</p>
+                      <p class="c-p7 header__cart-popup-goods-item-desc__remove">убрать</p>
+                    </div>
+                    <div class="header__cart-popup-goods-item-price">
+                      <p class="c-p4">160,00 руб.</p>
+                      <div class="header__cart-popup-goods-item-price__counter">
+                        <span class="c-p4 header__cart-popup-goods-item-price__remove">-</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__quantity">1</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__add">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__cart-popup-goods-item">
+                    <img class="header__cart-popup-goods-item__image" src="../header-footer/img/cart/mock-image.png" alt="">
+                    <div class="header__cart-popup-goods-item-desc">
+                      <a href="#" class="c-p4 c-link">Кодиеум (Кротон)</a>
+                      <p class="c-p7">высота 70 см</p>
+                      <p class="c-p7">диаметр горшка 30 см</p>
+                      <p class="c-p7 header__cart-popup-goods-item-desc__remove">убрать</p>
+                    </div>
+                    <div class="header__cart-popup-goods-item-price">
+                      <p class="c-p4">160,00 руб.</p>
+                      <div class="header__cart-popup-goods-item-price__counter">
+                        <span class="c-p4 header__cart-popup-goods-item-price__remove">-</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__quantity">1</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__add">+</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__cart-popup-goods-item">
+                    <img class="header__cart-popup-goods-item__image" src="../header-footer/img/cart/mock-image.png" alt="">
+                    <div class="header__cart-popup-goods-item-desc">
+                      <a href="#" class="c-p4 c-link">Кодиеум (Кротон)</a>
+                      <p class="c-p7">высота 70 см</p>
+                      <p class="c-p7">диаметр горшка 30 см</p>
+                      <p class="c-p7 header__cart-popup-goods-item-desc__remove">убрать</p>
+                    </div>
+                    <div class="header__cart-popup-goods-item-price">
+                      <p class="c-p4">160,00 руб.</p>
+                      <div class="header__cart-popup-goods-item-price__counter">
+                        <span class="c-p4 header__cart-popup-goods-item-price__remove">-</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__quantity">1</span>
+                        <span class="c-p4 header__cart-popup-goods-item-price__add">+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__cart-popup-footer">
+                  <span class="c-p2">Итого</span>
+                  <span class="c-p2">191,50 руб.</span>
+                </div>
+                <a class="btn btn-blue" href="#">Оформить заказ</a>
+              </div>
+            </div>
+
+
+            <span><i id="burger" class="icon icon-burger"></i></span>
+          </div>
+        </div>
+
+        <div class="modalWrapper modalWrapper-menu">
+          <div class="menu">
+            <div class="container">
+              <div class="menu__searchBlock">
+                <input class="menu__searchBlock-input" type="text">
+                <span class="menu__searchBlock-loop"><i class="icon icon-loop"></i></span>
+              </div>
+              <ul class="menu__list">
+                <p class="menu-title c-p4">Каталог <img src="../../icons/smallArrow.svg" alt=""></p>
+                <li><a class="c-p5">Цветы и букеты</a></li>
+                <li><a class="c-p5" href="">Композиции</a></li>
+                <li><a class="c-p5" href="">Комнатные растения</a></li>
+                <li><a class="c-p5" href="">Уличные растения</a></li>
+                <li><a class="c-p5" href="">Уход и подарки</a></li>
+                <li><a class="c-p5" href="">Услуги </a></li>
+                <li><a class="c-p5" href="">Акции </a></li>
+              </ul>
+              <ul class="menu__list">
+                <p class="menu-title c-p4">Покупателю <img src="../../icons/smallArrow.svg" alt=""></p>
+                <li><a class="c-p5" href="">Как заказать</a></li>
+                <li><a class="c-p5" href="">Оплата</a></li>
+                <li><a class="c-p5" href="">Доставка</a></li>
+                <li><a class="c-p5" href="">Политика скидок</a></li>
+                <li><a class="c-p5" href="">Гарантии</a></li>
+                <li><a class="c-p5" href="">Документы</a></li>
+                <li><a class="c-p5" href="">Подарочные сертификаты</a></li>
+              </ul>
+              <ul class="menu__list">
+                <p class="menu-title c-p4">О нас <img src="../../icons/smallArrow.svg" alt=""></p>
+                <li><a class="c-p5" href="">О компании</a></li>
+                <li><a class="c-p5" href="">Новости</a></li>
+                <li><a class="c-p5" href="">Блог</a></li>
+                <li><a class="c-p5" href="">Магазины</a></li>
+                <li><a class="c-p5" href="">Контакты</a></li>
+                <button id="reqCall" class="btn btn-blue btn-requestCall">Заказать звонок</button>
+              </ul>
+              <div class="searchResult__container">
+                <div class="searchResult__card">
+                  <img src="../header-footer/img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="../header-footer/img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="../header-footer/img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="../header-footer/img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="../header-footer/img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="../header-footer/img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+
+                <button class="btn btn-blue">Посмотреть все результаты</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-placement__wrap">
+      <div class="container">
+        <div class="modal-placement">
+          <p class="c-p4 modal-placement__title">Ваш город Борисов?</p>
+          <p class="c-p6 modal-placement__description">Доставка по Борисову, Борисовскому району и Жодино,
+            самовывоз из магазинов в Борисове.</p>
+          <div class="modal-placement__btn-wrap">
+            <button class="btn btn-blue">Да, сохранить</button>
+            <button class="btn btn-gray">Выбрать Минск</button>
+          </div>
+          <p class="c-p6 modal-placement__info">От выбранного города зависит наличие товаров и способ
+            доставки.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullWidthContainer navMenu">
+      <div class="container">
+        <ul class="navMenu__list">
+          <li><a class="c-p4" href="">Цветы и букеты</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Композиции</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Комнатные растения</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Уличные растения</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Уход и подарки</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Услуги</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Акции</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><span><i id="search" class="icon icon-loop search-loop"></i></span></li>
+        </ul>
+        <div class="navMenu__inputBlock">
+          <div class="container navMenu__inputWrap">
+            <input class="pageInput" type="text">
+            <span><i id="clearPageInput" class="icon icon-cross"></i></span>
+            <span><i class="icon icon-loop search-loop"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomMenuWrapper">
+      <div class="bottomMenu">
+        <!-- <div class="container bottomMenu-tab bottomMenu-activeTab">
+                <p class="c-p4 bottomMenu__tabTitle">Ваш город Минск?</p>
+                <p class="c-p5 bottomMenu__tabDescription">Доставка по Минску и районам в пределах 20 км от МКАД.</p>
+                <div class="bottomMenu__tabInputBlock">
+                    <label for="">Имя</label>
+                    <input type="text">
+                </div>
+                <button class="btn btn-blue bottomMenu__tabBtn">да, сохранить</button>
+            </div> -->
+        <div class="container bottomMenu__requisites bottomMenu-tab">
+          <p class="c-p4 bottomMenu__tabTitle">Реквизиты?</p>
+          <p class="c-p5 bottomMenu__tabDescription">ЧАСТНОЕ ТОРГОВОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ «МАГВИР» </p>
+          <p class="c-p5 bottomMenu__tabDescription">(ЧУП «МАГВИР»)</p>
+          <p class="c-p5 bottomMenu__tabDescription">Республика Беларусь, Минская обл., г. Борисов, ул.
+            Строителей, 45А, 222511 </p>
+          <p class="c-p5 bottomMenu__tabDescription">УНП 690316639&nbsp;&nbsp;&nbsp;&nbsp; ОКПО 292485256000
+          </p>
+          <p class="c-p4 bottomMenu__tabTitle">Расчётный счёт</p>
+          <p class="c-p5 bottomMenu__tabDescription">BY42 BAPB 3012 3177 9001 0000 0000 в ОАО
+            «Белагропромбанк»</p>
+          <p class="c-p5 bottomMenu__tabDescription">г. Минск, пр. Жукова, 3, BIC BAPBBY2X</p>
+          <button class="btn btn-blue bottomMenu__tabBtn">Скопировать</button>
+        </div>
+        <div class="container bottomMenu__place bottomMenu-tab">
+          <p class="c-p3">Ваш город Минск?</p>
+          <p class="c-p5">Доставка по Минску и районам в пределах 20 км от МКАД.</p>
+          <div class="bottomMenu__place-btnWrap">
+            <button class="btn btn-blue">Да, сохранить</button>
+            <button class="btn btn-gray">Выбрать Борисов</button>
+          </div>
+          <p class="c-p5">От выбранного города зависит наличие товаров и способ доставки.</p>
+        </div>
+        <div class="bottomMenu-tab bottomMenu__requestCall-success container">
+          <p class="c-p4 bottomMenu__tabTitle">Заявка отправлена</p>
+          <p class="c-p5 bottomMenu__tabDescription">Менеджер проконсультирует, ответит на ваши вопросы,
+            поможет с выбором.</p>
+          <button class="btn btn-blue modal__btn closeModal">Продолжить покупки</button>
+        </div>
+        <div class="bottomMenu-tab bottomMenu__requestCall container">
+          <p class="c-p4 bottomMenu__tabTitle">Заказать звонок</p>
+          <p class="c-p5 bottomMenu__tabDescription">Менеджер проконсультирует, ответит на ваши вопросы,
+            поможет с выбором. </p>
+          <div class="modal__requestCall-contentWrap">
+            <div class="modal__requestCall-inputWrap">
+              <label class="c-p4" for="">Имя</label>
+              <input class="c-p5" type="text">
+            </div>
+            <div class="modal__requestCall-inputWrap">
+              <label class="c-p4" for="">Номер телефона</label>
+              <input class="c-p5" type="text">
+            </div>
+            <button class="btn btn-blue modal__btn btn-submitReqCall">Отправить</button>
+          </div>
+        </div>
+        <div class="bottomMenu-tab bottomMenu__catalog container">
+          <ul class="bottomMenu__catalog-list">
+            <li class="bottomMenu__catalog-item"><a class="c-p6" href="">Цветы и букеты</a></li>
+            <li class="bottomMenu__catalog-item"><a class="c-p6" href="">Композиции</a></li>
+            <li class="bottomMenu__catalog-item"><a class="c-p6" href="">Комнатные растения</a></li>
+            <li class="bottomMenu__catalog-item"><a class="c-p6" href="">Уличные растения</a></li>
+            <li class="bottomMenu__catalog-item"><a class="c-p6" href="">Уход и подарки</a></li>
+            <li class="bottomMenu__catalog-item"><a class="c-p6" href="">Услуги</a></li>
+            <li class="bottomMenu__catalog-item"><a class="c-p6" href="">Акции</a></li>
+          </ul>
+        </div>
+        <div class="bottomMenu__container">
+          <div class="container">
+            <div class="bottomMenu__itemWrap">
+              <span><i class="icon icon-home"></i></span>
+              <p>Главная</p>
+            </div>
+            <div id="bottomCatalog" class="bottomMenu__itemWrap">
+              <span><i class="icon icon-catalog"></i></span>
+              <p>Каталог</p>
+            </div>
+            <div class="bottomMenu__itemWrap">
+              <span><i class="icon icon-bag"></i></span>
+              <p>Корзина</p>
+            </div>
+            <div id="bottomPlace" class="bottomMenu__itemWrap">
+              <span><i class="icon icon-place"></i></span>
+              <p>Минск</p>
+            </div>
+            <div class="bottomMenu__itemWrap">
+              <span><i class="icon icon-chat"></i></span>
+              <p>Чат</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="breadContainer">
+    <div class="container">
+        <a class="breadItem c-link">Главная</a>
+        <img src="../../icons/dot.svg" alt="">
+        <a class="breadItem c-link">Корзина</a>
+    </div>
+  </div>
+
+  <section class="container cart">
+    <div class="cart-main">
+      <div class="cart-main-steps">
+        <div class="cart-main-steps-item visited current">
+          <p class="c-h2 cart-main-steps-item__num">
+            1
+            <img class="cart-main-steps-item__back" src="./img/step-back.svg" alt="">
+            <img class="cart-main-steps-item__forth" src="./img/step-forth.svg" alt="">
+            <img class="cart-main-steps-item__done" src="./img/step-done.svg" alt="">
+          </p>
+          <p class="c-p4 cart-main-steps-item__text">Мой заказ</p>
+        </div>
+        <div class="cart-main-steps-item">
+          <p class="c-h2 cart-main-steps-item__num">
+            2
+            <img class="cart-main-steps-item__back" src="./img/step-back.svg" alt="">
+            <img class="cart-main-steps-item__forth" src="./img/step-forth.svg" alt="">
+            <img class="cart-main-steps-item__done" src="./img/step-done.svg" alt="">
+          </p>
+          <p class="c-p4 cart-main-steps-item__text">Доставка</p>
+        </div>
+        <div class="cart-main-steps-item">
+          <p class="c-h2 cart-main-steps-item__num">
+            3
+            <img class="cart-main-steps-item__back" src="./img/step-back.svg" alt="">
+            <img class="cart-main-steps-item__forth" src="./img/step-forth.svg" alt="">
+            <img class="cart-main-steps-item__done" src="./img/step-done.svg" alt="">
+          </p>
+          <p class="c-p4 cart-main-steps-item__text">Оплата</p>
+        </div>
+      </div>
+      <div class="cart-main__tab details fade active">
+        <div class="cart-main-goods">
+
+          <div class="cart-main-goods-item">
+            <a href="#" class="cart-main-goods-item__img">
+              <span class="cart-main-goods-item__discount">-10%</span>
+              <img src="./img/cart-item.png" alt="">
+            </a>
+            <div class="cart-main-goods-item__desc">
+              <a href="#" class="c-p2 cart-main-goods-item__title c-link">Кодиеум</a>
+              <p class="c-p5">высота 70 см</p>
+              <p class="c-p5">диаметр горшка 30 см</p>
+              <a class="c-p5 cart-main-goods-item__delete">убрать</a>
+            </div>
+            <div class="cart-main-goods-item-price">
+              <div class="cart-main-goods-item-price__block one">
+                <p class="c-p2 cart-main-goods-item-price__new">4,50 руб.</p>
+                <p class="cart-main-goods-item-price__old">6,00 руб.</p>
+              </div>
+              <div class="cart-main-goods-item-price__counter">
+                <span class="cart-main-goods-item-price__button remove c-p2">-</span>
+                <span class="cart-main-goods-item-price__quantity c-p2">7</span>
+                <span class="cart-main-goods-item-price__button add c-p2">+</span>
+              </div>
+              <div class="cart-main-goods-item-price__block all">
+                <p class="c-p2 cart-main-goods-item-price__new">31,50 руб.</p>
+                <p class="cart-main-goods-item-price__old">42,00 руб.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-main-goods-item">
+            <a href="#" class="cart-main-goods-item__img">
+              <img src="./img/cart-item.png" alt="">
+            </a>
+            <div class="cart-main-goods-item__desc">
+              <a href="#" class="c-p2 cart-main-goods-item__title c-link">Кодиеум</a>
+              <a class="c-p5 cart-main-goods-item__delete">убрать</a>
+            </div>
+            <div class="cart-main-goods-item-price">
+              <div class="cart-main-goods-item-price__block one">
+                <p class="c-p2 cart-main-goods-item-price__common">4,50 руб.</p>
+              </div>
+              <div class="cart-main-goods-item-price__counter">
+                <span class="cart-main-goods-item-price__button remove c-p2">-</span>
+                <span class="cart-main-goods-item-price__quantity c-p2">1</span>
+                <span class="cart-main-goods-item-price__button add c-p2">+</span>
+              </div>
+              <div class="cart-main-goods-item-price__block all">
+                <p class="c-p2 cart-main-goods-item-price__common">4,50 руб.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-main-goods-item">
+            <a href="#" class="cart-main-goods-item__img">
+              <img src="./img/cart-item.png" alt="">
+            </a>
+            <div class="cart-main-goods-item__desc">
+              <a href="#" class="c-p2 cart-main-goods-item__title c-link">Кодиеум</a>
+              <a class="c-p5 cart-main-goods-item__delete">убрать</a>
+            </div>
+            <div class="cart-main-goods-item-price">
+              <div class="cart-main-goods-item-price__block one">
+                <p class="c-p2 cart-main-goods-item-price__common">4,50 руб.</p>
+              </div>
+              <div class="cart-main-goods-item-price__counter">
+                <span class="cart-main-goods-item-price__button remove c-p2">-</span>
+                <span class="cart-main-goods-item-price__quantity c-p2">1</span>
+                <span class="cart-main-goods-item-price__button add c-p2">+</span>
+              </div>
+              <div class="cart-main-goods-item-price__block all">
+                <p class="c-p2 cart-main-goods-item-price__common">4,50 руб.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-main-goods-item">
+            <a href="#" class="cart-main-goods-item__img">
+              <img src="./img/cart-item.png" alt="">
+            </a>
+            <div class="cart-main-goods-item__desc">
+              <a href="#" class="c-p2 cart-main-goods-item__title c-link">Кодиеум</a>
+              <a class="c-p5 cart-main-goods-item__delete">убрать</a>
+            </div>
+            <div class="cart-main-goods-item-price">
+              <div class="cart-main-goods-item-price__block one">
+                <p class="c-p2 cart-main-goods-item-price__common">4,50 руб.</p>
+              </div>
+              <div class="cart-main-goods-item-price__counter">
+                <span class="cart-main-goods-item-price__button remove c-p2">-</span>
+                <span class="cart-main-goods-item-price__quantity c-p2">1</span>
+                <span class="cart-main-goods-item-price__button add c-p2">+</span>
+              </div>
+              <div class="cart-main-goods-item-price__block all">
+                <p class="c-p2 cart-main-goods-item-price__common">4,50 руб.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-main-goods-item">
+            <a href="#" class="cart-main-goods-item__img">
+              <img src="./img/cart-item.png" alt="">
+            </a>
+            <div class="cart-main-goods-item__desc">
+              <a href="#" class="c-p2 cart-main-goods-item__title c-link">Кодиеум</a>
+              <a class="c-p5 cart-main-goods-item__delete">убрать</a>
+            </div>
+            <div class="cart-main-goods-item-price">
+              <div class="cart-main-goods-item-price__block one">
+                <p class="c-p2 cart-main-goods-item-price__common">4,50 руб.</p>
+              </div>
+              <div class="cart-main-goods-item-price__counter">
+                <span class="cart-main-goods-item-price__button remove c-p2">-</span>
+                <span class="cart-main-goods-item-price__quantity c-p2">1</span>
+                <span class="cart-main-goods-item-price__button add c-p2">+</span>
+              </div>
+              <div class="cart-main-goods-item-price__block all">
+                <p class="c-p2 cart-main-goods-item-price__common">4,50 руб.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-main-goods-item postcard">
+            <div class="cart-main-goods-item__img">
+              <img src="./img/postcard--small.png" alt="">
+            </div>
+            <div class="cart-main-goods-item__desc">
+              <p class="c-p2 cart-main-goods-item__title">Открытка</p>
+              <a class="c-p5 cart-main-goods-item__delete_postcard">убрать</a>
+            </div>
+            <p class="c-p2 cart-main-goods-item-price">бесплатно</p>
+          </div>
+        </div>
+
+        <div class="cart-main-postcard">
+          <p class="c-h2 cart-main-postcard__accordion">
+            <svg class="cart-main-postcard__arrow" stroke="#70768A" width="29" height="29" viewBox="0 0 29 29"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.30078 10.417L14.5008 18.817L25.7008 10.417" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            Добавьте бесплатную открытку
+          </p>
+          <p class="c-p5">Слова подарят не&nbsp;меньше приятных эмоций, чем цветы. Выберите для открытки готовое
+            пожелание или напишите своё.</p>
+          <div class="cart-main-postcard-prepared cart-main-postcard__tab fade active">
+            <div class="cart-main-postcard-prepared-slider__wrap">
+              <div class="cart-main-postcard-prepared-slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="cart-main-postcard-prepared-slider__item swiper-slide">
+                    <p class="c-p4">Пожелание 1</p>
+                  </div>
+                  <div class="cart-main-postcard-prepared-slider__item swiper-slide">
+                    <p class="c-p4">Пожелание 2</p>
+                  </div>
+                  <div class="cart-main-postcard-prepared-slider__item swiper-slide">
+                    <p class="c-p4">Пожелание 4</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-main-postcard-prepared-slider__button prev">
+                <svg width="12" height="27" viewBox="0 0 12 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.6289 1.15625L1.37177 13.4991L10.6289 25.842" stroke="#70768A" stroke-width="2"
+                    stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="cart-main-postcard-prepared-slider__button next">
+                <svg width="12" height="27" viewBox="0 0 12 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.37109 25.8438L10.6282 13.5009L1.37109 1.15804" stroke="#70768A" stroke-width="2"
+                    stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="cart-main-postcard-buttons">
+              <button class="btn btn-blue" id="add_prepared_to_order">Добавить к заказу</button>
+              <button class="btn btn-gray switch_tab">Написать своё пожелание</button>
+            </div>
+          </div>
+          <div class="cart-main-postcard-own cart-main-postcard__tab">
+            <div class="cart-main-postcard-own-editor">
+              <textarea class="c-p4 cart-main-postcard-own-editor__textarea" name="postcard" id=""></textarea>
+              <button class="cart-main-postcard-own-editor__change">
+                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.5 20.626V25.001H7.875L20.7783 12.0976L16.4033 7.72263L3.5 20.626ZM24.1617 8.7143C24.6167 8.2593 24.6167 7.5243 24.1617 7.0693L21.4317 4.3393C20.9767 3.8843 20.2417 3.8843 19.7867 4.3393L17.6517 6.4743L22.0267 10.8493L24.1617 8.7143Z"
+                    fill="#70768A" />
+                </svg>
+              </button>
+            </div>
+            <p class="c-p7 cart-main-postcard-own__left">осталось <span>100</span> символов</p>
+            <div class="cart-main-postcard-buttons">
+              <button class="btn btn-blue" id="add_own_to_order" disabled>Добавить к заказу</button>
+              <button class="btn btn-blue" id="save_wish">Сохранить своё пожелание</button>
+              <button class="btn btn-gray switch_tab">Посмотреть готовые пожелания</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-main__tab checkout">
+        <div class="cart-main-point">
+          <img src="./img/region.svg" alt="">
+          <div class="cart-main-point__wrap">
+            <p class="c-h2">Выберите регион</p>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible point-accordion_trigger" type="radio" name="region"
+                id="borisov" checked>
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">Борисов, Борисовский район и&nbsp;Жодино</p>
+            </label>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible point-accordion_trigger" type="radio" name="region"
+                id="minsk">
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">Минск и&nbsp;Минский район в&nbsp;пределах 20&nbsp;км от&nbsp;МКАД</p>
+            </label>
+          </div>
+        </div>
+
+        <div class="cart-main-point point-accordion region_slave borisov_active point-accordion--active">
+          <img src="./img/delivery.svg" alt="">
+          <div class="cart-main-point__wrap">
+            <p class="c-h2">Выберите способ доставки</p>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible point-accordion_trigger" type="radio" name="delivery_way"
+                id="delivery" checked>
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">Курьером по&nbsp;адресу</p>
+            </label>
+            <p class="cart-main-point__undertext">Стоимость зависит от&nbsp;населённого пункта. Условия доставки
+              и&nbsp;цены смотрите <a class="cart-main-point__table_link">в&nbsp;таблице</a></p>
+            <div class="cart-main-point__table_popup__wrap">
+              <div class="cart-main-point__table_popup">
+                <p class="c-h4">Цены на доставку по Борисовскому району</p>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="#70768A" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.8323 9.99995L19.6199 2.21211C20.1268 1.70554 20.1268 0.886492 19.6199 0.379925C19.1134 -0.126642 18.2943 -0.126642 17.7878 0.379925L9.99991 8.16777L2.21229 0.379925C1.70548 -0.126642 0.886671 -0.126642 0.380104 0.379925C-0.126701 0.886492 -0.126701 1.70554 0.380104 2.21211L8.16772 9.99995L0.380104 17.7878C-0.126701 18.2944 -0.126701 19.1134 0.380104 19.62C0.632557 19.8727 0.964495 19.9996 1.2962 19.9996C1.6279 19.9996 1.9596 19.8727 2.21229 19.62L9.99991 11.8321L17.7878 19.62C18.0405 19.8727 18.3722 19.9996 18.7039 19.9996C19.0356 19.9996 19.3673 19.8727 19.6199 19.62C20.1268 19.1134 20.1268 18.2944 19.6199 17.7878L11.8323 9.99995Z" />
+                </svg>
+                <div class="cart-main-point-table__row header">
+                  <span class="cart-main-point-table__col c-p4">Населённые пункты</span>
+                  <span class="cart-main-point-table__col c-p4">Стоимость доставки, руб.</span>
+                  <span class="cart-main-point-table__col c-p4">Бесплатно от&nbsp;суммы, руб.</span>
+                </div>
+                <div class="cart-main-point-table__row">
+                  <span class="cart-main-point-table__col c-p5">Борисов, Остров, Стаи, Струпень, Углы, Юшкевичи</span>
+                  <span class="cart-main-point-table__col c-p4">6</span>
+                  <span class="cart-main-point-table__col c-p4">25</span>
+                </div>
+                <div class="cart-main-point-table__row">
+                  <span class="cart-main-point-table__col c-p5">Большое Стахово, Бытча, Гливин, Гора, Демидовка, Дубовый
+                    лог, Жодино, Изобка, Малое Стахово, Неманица, Пересады, Погодица, Подберезье, Пчельник, Светлая
+                    Роща, Стайки, Студёнка, Тарасовка, Упиревичи, Ухолода Большая, Ухолода Малая</span>
+                  <span class="cart-main-point-table__col c-p4">13</span>
+                  <span class="cart-main-point-table__col c-p4">50</span>
+                </div>
+                <div class="cart-main-point-table__row last">
+                  <span class="cart-main-point-table__col c-p5">Бродовка, Веселово, Житьково, Забашевичи, Зембин, Кищина
+                    Слобода, Кострица, Кричино, Лошница, Ляховка, Мётча, Новосады, Новосёлки (Гливин), Новосёлки
+                    (Лошница), Пески, Слободка</span>
+                  <span class="cart-main-point-table__col c-p4">20</span>
+                  <span class="cart-main-point-table__col c-p4">80</span>
+                </div>
+                <div class="cart-main-point-table_popup__footer">
+                  <p class="cart-main-point-table__col c-p4">Если вашего населённого пункта нет в&nbsp;списке,
+                    пожалуйста, позвоните нам. Менеджеры постараются помочь с&nbsp;доставкой по&nbsp;нужному адресу.</p>
+                  <a class="c-link c-p1" href="tel:+375296731010">+375 29 673-10-10</a>
+                </div>
+              </div>
+              <div class="cart-main-point__table_popup__outer"></div>
+            </div>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible point-accordion_trigger" type="radio" name="delivery_way"
+                id="pickup">
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">В&nbsp;пункт самовывоза</p>
+            </label>
+            <p class="cart-main-point__undertext">Бесплатно доставим заказ в&nbsp;любой магазин &laquo;Эдем&raquo;</p>
+            <div class="cart-main-point__popup_link open_popup_link delivery_way_slave point-accordion pickup_active">
+              <span class="c-p4">ул. Строителей, 45а</span>
+              <input type="hidden" id="pickup_point">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" stroke="#70768A"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.2002 12.5L12.0002 16.1L16.8002 12.5" stroke-linecap="round" />
+              </svg>
+              <div class="cart-main-point__popup point__small_popup pickup">
+                <p class="c-p4">ул. Строителей, 45а</p>
+                <a class="c-p5 c-link">ул. Лопатина, 34в</a>
+                <a class="c-p5 c-link">ул. Трусова, 30</a>
+                <a class="c-p5 c-link">ул. III Интернационала, 5</a>
+                <a class="c-p5 c-link">пр-т Революции, 35/2</a>
+                <a class="c-p5 c-link">ул. Гагарина, 105а</a>
+                <a class="c-p5 c-link">ул. Труда, киоск возле почты</a>
+                <a class="c-p5 c-link">Печи, ул. Серебренникова</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-main-point">
+          <img src="./img/time.svg" alt="">
+          <div class="cart-main-point__wrap">
+            <p class="c-h2">Укажите дату и&nbsp;время</p>
+            <div class="cart-main-point__datetime">
+              <div class="cart-main-point-accordion__wrap date">
+                <div class="open_popup_link">
+                  <span class="c-p5">Дата</span>
+                  <svg width="24" height="25" viewBox="0 0 24 25" stroke="#70768A" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.2002 12.5L12.0002 16.1L16.8002 12.5" stroke-linecap="round" />
+                  </svg>
+                  <div class="point__small_popup datepicker_popup">
+                    <div class="datepicker">
+                      <div class="datepicker__header">
+                        <p class="datepicker__month"></p>
+                        <div class="datepicker__arrows">
+                          <svg class="datepicker__arrow prev" width="11" height="19" viewBox="0 0 11 19"
+                            stroke="#70768A" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.48528 0.999094L1 9.48438L9.48528 17.9697" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                          <svg class="datepicker__arrow next" width="11" height="19" stroke="#70768A"
+                            viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.45564 0.999094L9.94092 9.48438L1.45564 17.9697" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="datepicker-table">
+                        <p class="c-p2">Пн</p>
+                        <p class="c-p2">Вт</p>
+                        <p class="c-p2">Ср</p>
+                        <p class="c-p2">Чт</p>
+                        <p class="c-p2">Пт</p>
+                        <p class="c-p2">Сб</p>
+                        <p class="c-p2">Вс</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <input type="text" id="date" class="c-p4 datepicker__result js-important" disabled>
+                <span class="cart-main-point-input__error">Выберите дату</span>
+              </div>
+              <div class="cart-main-point-accordion__wrap time disabled">
+                <div class="open_popup_link">
+                  <span class="c-p5">Время</span>
+                  <svg width="24" height="25" viewBox="0 0 24 25" stroke="#70768A" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.2002 12.5L12.0002 16.1L16.8002 12.5" stroke-linecap="round"></path>
+                  </svg>
+                  <div class="point__small_popup cart-main-point__popup intervals">
+
+                  </div>
+                </div>
+                <input type="text" id="time" class="c-p4 timepicker__result js-important" disabled>
+                <span class="cart-main-point-input__error">Выберите время</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-main-point point-accordion delivery_way_slave delivery_active point-accordion--active">
+          <img src="./img/address.svg" alt="">
+          <div class="cart-main-point__wrap address">
+            <p class="c-h2">Укажите адрес доставки</p>
+            <label class="cart-main-point-input text with_options">
+              <div class="c-p4 cart-main-point-input__title">Населённый пункт</div>
+              <input class="cart-main-point-input__text c-p5 js-important-hidden js-important"
+                placeholder="город, посёлок, деревня" type="text" id="city">
+              <span class="cart-main-point-input__error"></span>
+              <div class="cart-main-point-input-options options__wrap options_city">
+                <div class="options_city options__list"></div>
+              </div>
+            </label>
+            <label class="cart-main-point-input text with_options">
+              <div class="c-p4 cart-main-point-input__title">Улица</div>
+              <input class="cart-main-point-input__text c-p5 js-important-hidden js-important" type="text" id="street">
+              <span class="cart-main-point-input__error"></span>
+              <div class="cart-main-point-input-options options_street options__list options__wrap"></div>
+            </label>
+            <div class="cart-main-point-input__multiple">
+              <label class="cart-main-point-input text with_options">
+                <div class="c-p4 cart-main-point-input__title">Дом</div>
+                <input class="cart-main-point-input__text c-p5" type="text" id="house">
+                <div
+                  class="cart-main-point-input-options cart-main-point-input-options--thin options_house options__list options__wrap">
+                </div>
+              </label>
+              <label class="cart-main-point-input text">
+                <div class="c-p4 cart-main-point-input__title">Квартира</div>
+                <input class="cart-main-point-input__text c-p5" type="text" id="flat">
+              </label>
+              <label class="cart-main-point-input text">
+                <div class="c-p4 cart-main-point-input__title">Подъезд</div>
+                <input class="cart-main-point-input__text c-p5" type="text" id="entrance">
+              </label>
+              <label class="cart-main-point-input text">
+                <div class="c-p4 cart-main-point-input__title">Этаж</div>
+                <input class="cart-main-point-input__text c-p5" type="text" id="floor">
+              </label>
+            </div>
+            <label class="cart-main-point-input checkbox">
+              <input class="cart-main-point-input__invisible" type="checkbox" id="not_me">
+              <span class="cart-main-point-input__mock_checkbox"></span>
+              <p class="c-p5">Получатель &mdash; другой человек</p>
+            </label>
+            <div class="cart-main-point__not_me">
+              <label class="cart-main-point-input text">
+                <div class="c-p4 cart-main-point-input__title">Имя получателя</div>
+                <input class="cart-main-point-input__text c-p5 js-important-hidden" type="text" id="rec_name"
+                  name="name">
+                <span class="cart-main-point-input__error"></span>
+              </label>
+              <label class="cart-main-point-input text">
+                <div class="c-p4 cart-main-point-input__title">Телефон</div>
+                <input class="cart-main-point-input__text c-p5 js-important-hidden" type="text"
+                  placeholder="+375 (__) ___-__-__" id="rec_phone" name="phone">
+                <span class="cart-main-point-input__error"></span>
+              </label>
+              <label class="cart-main-point-input checkbox">
+                <input class="cart-main-point-input__invisible" type="checkbox" id="incognito">
+                <span class="cart-main-point-input__mock_checkbox"></span>
+                <p class="c-p5">Хочу остаться инкогнито для получателя</p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-main__tab payment">
+        <div class="cart-main-point">
+          <img src="./img/payment.svg" alt="">
+          <div class="cart-main-point__wrap">
+            <p class="c-h2">Выберите способ оплаты</p>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible" type="radio" name="payment" id="erip" checked>
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">Через систему «Расчёт» (ЕРИП)</p>
+            </label>
+            <p class="cart-main-point__undertext">по&nbsp;номеру заказа через интернет или в&nbsp;банке</p>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible" type="radio" name="payment" id="cash">
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">Наличными</p>
+            </label>
+            <p class="cart-main-point__undertext">в&nbsp;белорусских рублях при доставке курьером или самовывозе</p>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible" type="radio" name="payment" id="card_courier">
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">Банковской картой при получении</p>
+            </label>
+            <p class="cart-main-point__undertext">продавцу в&nbsp;магазине или курьеру</p>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible" type="radio" name="payment" id="card_online">
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">Банковской картой онлайн</p>
+            </label>
+            <a href="#" class="c-link cart-main-point__undertext">через систему Assist</a>
+            <label class="cart-main-point-input">
+              <input class="cart-main-point-input__invisible" type="radio" name="payment" id="card_halva">
+              <span class="cart-main-point-input__mock_radio"></span>
+              <p class="c-p4">Картой &laquo;Халва&raquo;</p>
+            </label>
+            <p class="cart-main-point__undertext">в&nbsp;рассрочку без процентов на&nbsp;1&nbsp;месяц</p>
+          </div>
+        </div>
+
+        <div class="cart-main-point personal_data">
+          <img src="./img/data.svg" alt="">
+          <div class="cart-main-point__wrap">
+            <p class="c-h2">Введите личные данные</p>
+
+            <label class="cart-main-point-input text">
+              <div class="c-p4 cart-main-point-input__title">Имя</div>
+              <input class="cart-main-point-input__text c-p5 js-important" type="text" name="name" id="name">
+              <span class="cart-main-point-input__error"></span>
+            </label>
+
+            <label class="cart-main-point-input text">
+              <div class="c-p4 cart-main-point-input__title">
+                Телефон
+                <svg class="cart-main-point-input__help" width="24" height="25" viewBox="0 0 24 25" fill="#869BD8"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12.5" r="12" />
+                  <path
+                    d="M11.9996 19.5C11.6885 19.5 11.4269 19.4149 11.2148 19.2448C11.0168 19.0625 10.9178 18.8377 10.9178 18.5703V10.4583C10.9178 10.1788 11.0168 9.95399 11.2148 9.78385C11.4269 9.61371 11.6885 9.52865 11.9996 9.52865C12.3249 9.52865 12.5865 9.61371 12.7845 9.78385C12.9824 9.95399 13.0814 10.1788 13.0814 10.4583V18.5703C13.0814 18.8377 12.9824 19.0625 12.7845 19.2448C12.5865 19.4149 12.3249 19.5 11.9996 19.5ZM11.9996 7.90625C11.6178 7.90625 11.2855 7.7908 11.0026 7.5599C10.734 7.31684 10.5996 7.03125 10.5996 6.70312C10.5996 6.375 10.734 6.09549 11.0026 5.86458C11.2855 5.62153 11.6178 5.5 11.9996 5.5C12.3814 5.5 12.7067 5.62153 12.9754 5.86458C13.2582 6.09549 13.3996 6.375 13.3996 6.70312C13.3996 7.03125 13.2582 7.31684 12.9754 7.5599C12.7067 7.7908 12.3814 7.90625 11.9996 7.90625Z"
+                    fill="#FBF9F7" />
+                </svg>
+                <p class="cart-main-point-input__help_popup c-p5">
+                  Можем позвонить, чтобы уточнить детали заказа
+                </p>
+              </div>
+              <input class="cart-main-point-input__text c-p5 js-important" type="text" placeholder="+375 (__) ___-__-__"
+                name="phone" id="phone">
+              <span class="cart-main-point-input__error"></span>
+            </label>
+
+            <label class="cart-main-point-input text">
+              <div class="c-p4 cart-main-point-input__title">
+                Электронная почта
+                <svg class="cart-main-point-input__help" width="24" height="25" viewBox="0 0 24 25" fill="#869BD8"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12.5" r="12" />
+                  <path
+                    d="M11.9996 19.5C11.6885 19.5 11.4269 19.4149 11.2148 19.2448C11.0168 19.0625 10.9178 18.8377 10.9178 18.5703V10.4583C10.9178 10.1788 11.0168 9.95399 11.2148 9.78385C11.4269 9.61371 11.6885 9.52865 11.9996 9.52865C12.3249 9.52865 12.5865 9.61371 12.7845 9.78385C12.9824 9.95399 13.0814 10.1788 13.0814 10.4583V18.5703C13.0814 18.8377 12.9824 19.0625 12.7845 19.2448C12.5865 19.4149 12.3249 19.5 11.9996 19.5ZM11.9996 7.90625C11.6178 7.90625 11.2855 7.7908 11.0026 7.5599C10.734 7.31684 10.5996 7.03125 10.5996 6.70312C10.5996 6.375 10.734 6.09549 11.0026 5.86458C11.2855 5.62153 11.6178 5.5 11.9996 5.5C12.3814 5.5 12.7067 5.62153 12.9754 5.86458C13.2582 6.09549 13.3996 6.375 13.3996 6.70312C13.3996 7.03125 13.2582 7.31684 12.9754 7.5599C12.7067 7.7908 12.3814 7.90625 11.9996 7.90625Z"
+                    fill="#FBF9F7" />
+                </svg>
+                <p class="cart-main-point-input__help_popup c-p5">
+                  Пришлём письмо с&nbsp;подтверждением заказа
+                </p>
+              </div>
+              <input class="cart-main-point-input__text c-p5 js-validate" type="text" name="email" id="email">
+              <span class="cart-main-point-input__error"></span>
+            </label>
+
+            <label class="cart-main-point-input text">
+              <div class="c-p4 cart-main-point-input__title">Комментарий</div>
+              <textarea class="cart-main-point-input__text textarea c-p5" name="" id="comment"></textarea>
+            </label>
+
+            <label class="cart-main-point-input checkbox">
+              <input class="cart-main-point-input__invisible js-important" type="checkbox" name="terms_of_use"
+                id="terms_of_use" >
+              <span class="cart-main-point-input__mock_checkbox"></span>
+              <p class="c-p5">Принимаю условия <a class="c-p4 c-link" href="#">пользовательского соглашения</a></p>
+            </label>
+
+            <label class="cart-main-point-input checkbox">
+              <input class="cart-main-point-input__invisible" type="checkbox" id="mailing">
+              <span class="cart-main-point-input__mock_checkbox"></span>
+              <p class="c-p5">Хочу получать информацию об&nbsp;акциях и&nbsp;скидках по&nbsp;номеру телефона или
+                электронной почте</p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-side">
+      <div class="cart-side-result">
+        <p class="c-p1 cart-side-result__sum">Итого <span>282,50 руб.</span></p>
+        <p class="c-p5 cart-side-result__discounted">Вы экономите <span class="c-p4">10,50 руб.</span></p>
+        <p class="c-p5">Номер карты клиента или промокод:</p>
+        <input class="c-p3 cart-side-result__input_promo" type="text">
+        <p class="cart-side-result__promo_res"></p>
+        <p class="cart-side-result__undertext">Скидка по&nbsp;карте клиента или промокоду не&nbsp;действует
+          на&nbsp;акционные товары</p>
+        <div class="cart-side-result__footer">
+          <button class="btn btn-blue cart-side-result__order">Оформить заказ</button>
+          <button class="btn btn-gray cart-side-result__fast_order">Заказать в один клик</button>
+        </div>
+      </div>
+      <a href="#" class="cart-side-client_card">
+        <img class="cart-side-client_card__img" src="./img/client-card.png" alt="">
+        <p class="c-p4">Получите карту клиента</p>
+        <p class="c-p7">При заказе от&nbsp;100&nbsp;руб. дарим постоянную скидку&nbsp;5%.</p>
+      </a>
+    </div>
+  </section>
+
+  <div class="fast_order__wrap">
+    <div class="fast_order fast_order__main active fade">
+      <svg class="fast_order__close" width="24" height="24" viewBox="0 0 24 24" fill="#70768A"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14.1988 12.0002L23.5439 2.65458C24.152 2.04669 24.152 1.06381 23.5439 0.455919C22.936 -0.151973 21.9531 -0.151973 21.3453 0.455919L11.9999 9.80152L2.65474 0.455919C2.04658 -0.151973 1.064 -0.151973 0.456123 0.455919C-0.152041 1.06381 -0.152041 2.04669 0.456123 2.65458L9.80124 12.0002L0.456123 21.3458C-0.152041 21.9537 -0.152041 22.9365 0.456123 23.5444C0.759067 23.8477 1.15739 24 1.55543 24C1.95347 24 2.35151 23.8477 2.65474 23.5444L11.9999 14.1988L21.3453 23.5444C21.6485 23.8477 22.0465 24 22.4446 24C22.8426 24 23.2406 23.8477 23.5439 23.5444C24.152 22.9365 24.152 21.9537 23.5439 21.3458L14.1988 12.0002Z" />
+      </svg>
+      <p class="fast_order__title">Заказать в 1 клик</p>
+      <p class="c-p5">Менеджер уточнит детали и&nbsp;оформит заказ, сэкономит ваши силы и&nbsp;время.</p>
+      <div class="fast_order__form">
+        <label class="fast_order__label">
+          <p class="c-p4">Имя</p>
+          <input class="fast_order__input c-p5 js-important" type="text" name="name" id="fast_name">
+          <span class="fast_order__error">*обязательное поле</span>
+        </label>
+        <label class="fast_order__label">
+          <p class="c-p4">Телефон</p>
+          <input placeholder="+375 (__) ___-__-__" class="fast_order__input c-p5 js-important" type="text" name="phone"
+            id="fast_phone">
+          <span class="fast_order__error">*обязательное поле</span>
+        </label>
+        <label class="fast_order__checkbox">
+          <input class="cart-main-point-input__invisible js-important js-valid" type="checkbox" name="terms_of_use" id="fast_terms" checked="">
+          <span class="cart-main-point-input__mock_checkbox"></span>
+          <p class="c-p5">Принимаю условия <a class="c-p4 c-link" href="#">пользовательского соглашения</a></p>
+        </label>
+        <button class="btn btn-blue fast_order__send">Отправить</button>
+      </div>
+    </div>
+    <div class="fast_order__success fast_order__main">
+      <svg class="fast_order__close" width="24" height="24" viewBox="0 0 24 24" fill="#70768A"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14.1988 12.0002L23.5439 2.65458C24.152 2.04669 24.152 1.06381 23.5439 0.455919C22.936 -0.151973 21.9531 -0.151973 21.3453 0.455919L11.9999 9.80152L2.65474 0.455919C2.04658 -0.151973 1.064 -0.151973 0.456123 0.455919C-0.152041 1.06381 -0.152041 2.04669 0.456123 2.65458L9.80124 12.0002L0.456123 21.3458C-0.152041 21.9537 -0.152041 22.9365 0.456123 23.5444C0.759067 23.8477 1.15739 24 1.55543 24C1.95347 24 2.35151 23.8477 2.65474 23.5444L11.9999 14.1988L21.3453 23.5444C21.6485 23.8477 22.0465 24 22.4446 24C22.8426 24 23.2406 23.8477 23.5439 23.5444C24.152 22.9365 24.152 21.9537 23.5439 21.3458L14.1988 12.0002Z" />
+      </svg>
+      <p class="fast_order__title">Заявка отправлена</p>
+      <p class="c-p5">Ждите звонка в&nbsp;течение 1&nbsp;часа. Работаем ежедневно с&nbsp;8&nbsp;до&nbsp;20, если уже
+        поздно&nbsp;&mdash; перезвоним завтра утром.</p>
+      <button class="btn btn-blue fast_order__dismiss">Продолжить покупки</button>
+    </div>
+    <div class="fast_order__outer"></div>
+  </div>
+
+  <footer>
+    <div class="fullWidthContainer footer">
+      <div class="container">
+        <div class="footer__paidBlock">
+          <div class="header__titleBlock">
+            <img src="../../icons/logo.svg" alt="">
+            <img src="../../icons/title.svg" alt="">
+          </div>
+          <div class="footer__paidImagesBlock">
+            <img src="../header-footer/img/paid1.png" alt="">
+            <img src="../header-footer/img/paid2.png" alt="">
+            <img src="../header-footer/img/paid3.png" alt="">
+            <img src="../header-footer/img/paid4.png" alt="">
+            <img src="../header-footer/img/paid5.png" alt="">
+            <img src="../header-footer/img/paid6.png" alt="">
+            <img src="../header-footer/img/paid7.png" alt="">
+            <img src="../header-footer/img/paid8.png" alt="">
+            <img src="../header-footer/img/paid9.png" alt="">
+            <img src="../header-footer/img/paid10.png" alt="">
+            <img src="../header-footer/img/paid11.png" alt="">
+          </div>
+          <div class="footer__termsOfUseBlock">
+            <a class="footer__termsOfUse" href="">Пользовательское соглашение</a>
+            <a id="requisitesMobile" class="footer__termsOfUse">Реквизиты</a>
+          </div>
+        </div>
+        <ul class="menu__list">
+          <p class="menu-title c-p4">Каталог <img src="../../icons/smallArrow.svg" alt=""></p>
+          <li><a class="c-p5">Цветы и букеты</a></li>
+          <li><a class="c-p5" href="">Композиции</a></li>
+          <li><a class="c-p5" href="">Комнатные растения</a></li>
+          <li><a class="c-p5" href="">Уличные растения</a></li>
+          <li><a class="c-p5" href="">Уход и подарки</a></li>
+          <li><a class="c-p5" href="">Услуги </a></li>
+          <li><a class="c-p5" href="">Акции </a></li>
+        </ul>
+        <ul class="menu__list">
+          <p class="menu-title c-p4">Покупателю <img src="../../icons/smallArrow.svg" alt=""></p>
+          <li><a class="c-p5" href="">Как заказать</a></li>
+          <li><a class="c-p5" href="">Оплата</a></li>
+          <li><a class="c-p5" href="">Доставка</a></li>
+          <li><a class="c-p5" href="">Политика скидок</a></li>
+          <li><a class="c-p5" href="">Гарантии</a></li>
+          <li><a class="c-p5" href="">Документы</a></li>
+          <li><a class="c-p5" href="">Подарочные сертификаты</a></li>
+        </ul>
+        <div class="footer__moreInfoBlock">
+          <p class="c-p4">Контакты</p>
+          <p class="c-p5">ежедневно с 8 до 20.30</p>
+          <a class="c-p5" href="mailto:manager@edem.by">manager@edem.by</a>
+          <a class="c-p5" href="tel:+375296731010">+375 29 673-10-10</a>
+          <button class="btn-blue btn btn-requestCall">Заказать звонок</button>
+
+          <div class="footer__socialBlock">
+            <a href="https://www.instagram.com/flowersedem/" class="c-link">
+              <img src="../header-footer/img/instagram.svg" alt="">
+            </a>
+            <a href="https://web.facebook.com/edemflower/?_rdc=1&_rdr" class="c-link">
+              <img src="../header-footer/img/facebook.svg" alt="">
+            </a>
+            <a href="https://vk.com/edemflower" class="c-link">
+              <img src="../header-footer/img/vk.svg" alt="">
+            </a>
+            <a href="https://ok.ru/edemflower" class="c-link">
+              <img src="../header-footer/img/odnoklass.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fullWidthContainer copyright">
+      <div class="container">
+        <a id="requisites" class="c-p4 c-link">Реквизиты</a>
+        <p class="c-p5 companyTitle">© ЧУП «Магвир», 2021</p>
+        <p class="c-p5 cheshireTitle">Создание сайта и развитие проекта — <a class="c-link"
+            href="https://cheshire-cat.by/">Чеширский Кот</a></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal">
+    <div class="modalContent modal-search">
+      <div class="searchCard__container">
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-newPrice">от 4,50 руб.<span class="searchCard-oldPrice">от 4,50
+                руб.</span></p>
+          </div>
+          <span class="searchCard-discount">-10%</span>
+        </div>
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-price">163,50 руб.</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-newPrice">от 4,50 руб.<span class="searchCard-oldPrice">от 4,50
+                руб.</span></p>
+          </div>
+          <span class="searchCard-discount">-10%</span>
+        </div>
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-price">163,50 руб.</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-newPrice">от 4,50 руб.<span class="searchCard-oldPrice">от 4,50
+                руб.</span></p>
+          </div>
+          <span class="searchCard-discount">-10%</span>
+        </div>
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="../header-footer/img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-price">163,50 руб.</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-blue">Посмотреть все результаты</button>
+
+      <span><i class="icon icon-cross closeModal"></i></span>
+    </div>
+    <div class="modalContent modal-requisites">
+      <p class="c-p1 modal__title">Реквизиты?</p>
+      <p class="c-p5 modal__description">ЧАСТНОЕ ТОРГОВОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ «МАГВИР» </p>
+      <p class="c-p5 modal__description">(ЧУП «МАГВИР»)</p>
+      <p class="c-p5 modal__description">Республика Беларусь, Минская обл., г. Борисов</p>
+      <p class="c-p5 modal__description">ул. Строителей, 45А, 222511</p>
+      <p class="c-p5 modal__description">УНП 690316639&nbsp;&nbsp;&nbsp;&nbsp; ОКПО 292485256000</p>
+      <p class="c-p2 modal__subtitle">Расчётный счёт</p>
+      <p class="c-p5 modal__description">BY42 BAPB 3012 3177 9001 0000 0000</p>
+      <p class="c-p5 modal__description"> в ОАО «Белагропромбанк»</p>
+      <p class="c-p5 modal__description">г. Минск, пр. Жукова, 3</p>
+      <p class="c-p5 modal__description">BIC BAPBBY2X</p>
+      <button class="btn btn-blue modal__btn">Скопировать</button>
+
+      <span><i class="icon icon-cross closeModal"></i></span>
+    </div>
+    <div class="modalContent modal-requestCall">
+      <p class="c-p1 modal__title">Заказать звонок</p>
+      <p class="c-p5 modal__description">Менеджер проконсультирует, ответит на ваши вопросы, поможет с выбором.
+      </p>
+      <div class="modal__requestCall-contentWrap">
+        <div class="modal__requestCall-inputWrap">
+          <label class="c-p4" for="">Имя</label>
+          <input class="c-p5" type="text">
+        </div>
+        <div class="modal__requestCall-inputWrap">
+          <label class="c-p4" for="">Номер телефона</label>
+          <input class="c-p5" type="text">
+        </div>
+        <button class="btn btn-blue modal__btn btn-submitReqCall">Отправить</button>
+      </div>
+
+
+      <span><i class="icon icon-cross closeModal"></i></span>
+    </div>
+    <div class="modalContent modal-requestCall-success">
+      <p class="c-p1 modal__title">Заявка отправлена</p>
+      <p class="c-p5 modal__description">Ждите звонка в течение 1 часа. Работаем ежедневнос 8 до 20, если уже
+        поздно — перезвоним завтра утром.</p>
+      <button class="btn btn-blue modal__btn closeModal">Продолжить покупки</button>
+
+      <span><i class="icon icon-cross closeModal"></i></span>
+    </div>
+  </div>
+
+  <script src="../../js/swiper-bundle.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
+  <script src="../header-footer/header-footer.js"></script>
+  <script src="./datepicker.js"></script>
+  <script src="./cart.js"></script>
+</body>
+
+</html>

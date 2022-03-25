@@ -1,0 +1,662 @@
+:root {
+    --main-text-color: #70768A;
+    --main-hover-color: #6D86CF;
+    --main-pressed-color: #6179BE;
+    --main-bg-color: #F6EEEC;
+    --main-blue-color: #869BD8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#F6EEEC 50% , #FBF9F7 100% );
+    height: 500px;
+    z-index: -1;
+    width: 100%;
+} */
+
+body {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #FBF9F7;
+    position: relative;
+}
+
+.c-h1, .c-h2, .c-h3, .c-h4, .c-h5, .c-h6 {
+    color: var(--main-text-color);
+    font-family: "Comfortaa";
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, label, a, li, button, p, span {
+    color: var(--main-text-color);
+    font-family: "Montserrat"
+}
+
+a:not(.btn):hover {
+    color: var(--main-hover-color);
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+}
+
+.fullWidthContainer {
+    width: 100%;
+}
+
+.c-h1 {
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.c-h2 {
+    font-size: 30px;
+    line-height: 130%;
+}
+
+.c-h3 {
+    font-size: 25px;
+    line-height: 130%;
+}
+
+.c-h4 {
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.c-p1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.c-p2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.c-p3 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.c-p4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.c-p5 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.c-p6 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.c-p7 {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.c-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+}
+
+.c-bread {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.c-tags {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+}
+
+.c-link {
+    color: var(--main-blue-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.c-link:hover {
+    color: var(--main-hover-color);
+}
+
+.c-link:active {
+    color: var(--main-pressed-color);
+}
+
+.c-factoid {
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: bold;
+    font-family: 'Comfortaa';
+}
+
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    padding: 15px 30px;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-blue {
+    color: #F6EEEC;
+    background: #869BD8;
+}
+
+.btn-blue:hover {
+    background: #6D86CF;
+    border-radius: 1px;
+}
+
+.btn-blue:active {
+    background: #6179BE;
+    border-radius: 1px;
+}
+
+.btn-blue.disabled {
+    cursor: default;
+    background: rgba(134, 155, 216, 0.5);
+    border-radius: 1px;
+}
+
+.btn-gray {
+    background: #EFE5E3;
+    border-radius: 1px;
+    color: #869BD8;
+}
+
+.btn-gray:hover {
+    background: #EBD8D4;
+}
+
+.btn-gray:active {
+    background: #E8CDC8;
+}
+
+span .icon {
+    cursor: pointer;
+}
+
+span:hover .icon::before {
+    color: #6D86CF;
+}
+
+span:hover .icon:active {
+    color: #6179BE;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.customInputWrap {
+    display: block;
+    position: relative;
+    padding-left: 17px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.customInputWrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: #F6EEEC;
+    border: 1px solid #70768A;
+    border-radius: 2px;
+}
+
+.radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 1px solid #70768A;
+    border-radius: 50%;
+}
+
+.customInputWrap input:checked~.checkmark {
+    background: url(../icons/checkbox.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.customInputWrap input:checked~.radio:after {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: #869BD8;
+    z-index: 100;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.customInputWrap input:checked~.radio {
+    background-color: #fff;
+}
+
+.breadContainer > .container {
+    display: flex;
+}
+
+.breadContainer > .container img {
+    margin: 0 10px;
+}
+
+.breadContainer > .container .breadItem {
+    font-size: 12px;
+    line-height: 120%;
+
+    font-family: 'Comfortaa';
+    color: #70768A;
+}
+
+.breadItem:last-child {
+    cursor: initial;
+}
+
+.breadItem.c-link {
+    color: var(--main-text-color);
+}
+
+.breadContainer > .container .breadItem:last-child {
+    color: #70768A;
+}
+
+.breadContainer > .container .breadItem:not(:last-child) {
+    opacity: 0.68;
+}
+
+.breadContainer {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+   
+
+@media (max-width: 1439px) {
+    .container {
+        width: 1200px;
+    }
+    .c-h1 {
+        font-size: 40px;
+        line-height: 130%;
+    }
+    .c-h2 {
+        font-size: 30px;
+        line-height: 130%;
+    }
+    .c-h3 {
+        font-size: 25px;
+        line-height: 130%;
+    }
+    .c-h4 {
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .c-p1 {
+        font-size: 30px;
+        line-height: 150%;
+    }
+    .c-p3, .c-p2 {
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .c-p4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .c-p5 {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .c-h3 {
+        font-size: 25px;
+    }
+    .c-p6 {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .c-p7 {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    body::before {
+        height: 420px;
+    }
+
+    .c-factoid {
+        font-size: 44px;
+        line-height: 110%;
+    }
+
+    .c-tags {
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    .c-bread {
+        font-size: 12px;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 1279px) {
+    
+    
+    .breadContainer > .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .breadContainer {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .breadItem:last-child {
+        font-size: 20px;
+    }
+
+    
+    .breadContainer > .container {
+        width: fit-content;
+    }
+
+    body::before {
+        height: 190px;
+    }
+
+    .container {
+        width: 700px;
+    }
+    .c-h1 {
+        font-size: 25px;
+        line-height: 130%;
+    }
+    .c-h2 {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    .c-h3 {
+        font-size: 14px;
+    }
+    .c-h4 {
+        font-size: 14px;
+    }
+    .c-p1 {
+        font-size: 18px;
+    }
+    .c-p4 {
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .c-p5 {
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .c-p6 {
+        font-size: 10px;
+        line-height: 150%;
+    }
+    .c-p3, .c-p2 {
+        font-size: 14px;
+    }
+    .c-tags {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 120%;
+        letter-spacing: 0.1em;
+    }
+    .c-p7 {
+        font-size: 10px;
+        line-height: 150%;
+    }
+    .btn {
+        padding: 17px 20px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .c-factoid {
+        font-size: 38px;
+        line-height: 105%;
+    }
+}
+
+@media (max-width: 767px) {
+    body::before {
+        height: 179px;
+    }
+
+    
+    .breadContainer > .container .breadItem {
+        font-size: 10px;
+        line-height: 150%;
+    }
+
+    .container {
+        width: 330px;
+    }
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../fonts/Comfortaa-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../fonts/Comfortaa-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url('../fonts/Comfortaa-Light.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Light.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/icons.eot?cgj9eq');
+    src: url('../fonts/icons.eot?cgj9eq#iefix') format('embedded-opentype'), url('../fonts/icons.ttf?cgj9eq') format('truetype'), url('../fonts/icons.woff?cgj9eq') format('woff'), url('../fonts/icons.svg?cgj9eq#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon::before {
+    transition: 0.3s;
+}
+
+.icon-db-arrow:before {
+    content: "\6b";
+    color: #70768a;
+}
+
+.icon-filter:before {
+    content: "\e901";
+    color: #70768a;
+}
+
+.icon-catalog:before {
+    content: "\71";
+    color: #70768a;
+}
+
+.icon-home:before {
+    content: "\61";
+    color: #70768a;
+}
+
+.icon-chat:before {
+    content: "\67";
+    color: #70768a;
+}
+
+.icon-burger:before {
+    content: "\31";
+    color: #70768a;
+}
+
+.icon-cross:before {
+    content: "\32";
+    color: #70768a;
+}
+
+.icon-place:before {
+    content: "\33";
+    color: #70768a;
+}
+
+.icon-bag:before {
+    content: "\34";
+    color: #70768a;
+}
+
+.icon-phone:before {
+    content: "\35";
+    color: #70768a;
+}
+
+.icon-loop:before {
+    content: "\36";
+    color: #70768a;
+}

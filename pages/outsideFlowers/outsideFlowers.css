@@ -1,0 +1,10 @@
+.outsideFlowers {
+    column-gap: 50px;
+    justify-content: center;
+}
+
+@media (max-width: 1439px) {
+    .outsideFlowers {
+        column-gap: 30px;
+    }
+}

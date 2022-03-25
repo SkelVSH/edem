@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../header-footer/header-footer.css">
+  <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body class="cart--empty">
+  <header>
+
+    <div class='fullWidthContainer header'>
+      <div class="container header__container">
+        <div class="header__titleBlock">
+          <img src="../../icons/logo.svg" alt="">
+          <img src="../../icons/title.svg" alt="">
+          <p>цветы и растения</p>
+        </div>
+        <div class="header__navBlock">
+          <div class="header__placeBlock">
+            <span><i class="icon icon-place"></i></span>
+            <p class="c-p5">Борисов</p>
+            <img src="../../icons/smallArrow.svg" alt="">
+          </div>
+          <div class="header__phoneBlock">
+            <span><i class="icon icon-phone"></i></span>
+            <p class="c-p5">+375 29 673-10-10</p>
+          </div>
+          <div class="header__menuBlock">
+            <span><i class="icon icon-bag"></i></span>
+            <span><i id='burger' class="icon icon-burger"></i></span>
+          </div>
+        </div>
+
+        <div class="modalWrapper modalWrapper-menu">
+          <div class="menu">
+            <div class="container">
+              <div class="menu__searchBlock">
+                <input class="menu__searchBlock-input" type="text">
+                <span class="menu__searchBlock-loop"><i class="icon icon-loop"></i></span>
+              </div>
+              <ul class="menu__list">
+                <p class="menu-title c-p4">Каталог <img src="../../icons/smallArrow.svg" alt=""></p>
+                <li><a class="c-p5">Цветы и букеты</a></li>
+                <li><a class="c-p5" href="">Композиции</a></li>
+                <li><a class="c-p5" href="">Комнатные растения</a></li>
+                <li><a class="c-p5" href="">Уличные растения</a></li>
+                <li><a class="c-p5" href="">Уход и подарки</a></li>
+                <li><a class="c-p5" href="">Услуги </a></li>
+                <li><a class="c-p5" href="">Акции </a></li>
+              </ul>
+              <ul class="menu__list">
+                <p class="menu-title c-p4">Покупателю <img src="../../icons/smallArrow.svg" alt=""></p>
+                <li><a class="c-p5" href="">Как заказать</a></li>
+                <li><a class="c-p5" href="">Оплата</a></li>
+                <li><a class="c-p5" href="">Доставка</a></li>
+                <li><a class="c-p5" href="">Политика скидок</a></li>
+                <li><a class="c-p5" href="">Гарантии</a></li>
+                <li><a class="c-p5" href="">Документы</a></li>
+                <li><a class="c-p5" href="">Подарочные сертификаты</a></li>
+              </ul>
+              <ul class="menu__list">
+                <p class="menu-title c-p4">О нас <img src="../../icons/smallArrow.svg" alt=""></p>
+                <li><a class="c-p5" href="">О компании</a></li>
+                <li><a class="c-p5" href="">Новости</a></li>
+                <li><a class="c-p5" href="">Блог</a></li>
+                <li><a class="c-p5" href="">Магазины</a></li>
+                <li><a class="c-p5" href="">Контакты</a></li>
+                <button id='reqCall' class="btn btn-blue btn-requestCall">Заказать звонок</button>
+              </ul>
+              <div class="searchResult__container">
+                <div class="searchResult__card">
+                  <img src="./img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="./img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="./img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="./img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="./img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+                <div class="searchResult__card">
+                  <img src="./img/flower.png" alt="" class="searchResult__card-img">
+                  <div class="searchResult__card-content">
+                    <p class="c-p3 searchResult__card-title">Роза Кахала</p>
+                    <p class="c-p5 searchResult__card-price">от 4,50 руб.</p>
+                  </div>
+                </div>
+
+                <button class="btn btn-blue">Посмотреть все результаты</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-placement__wrap">
+      <div class="container">
+        <div class="modal-placement">
+          <p class="c-p4 modal-placement__title">Ваш город Борисов?</p>
+          <p class="c-p6 modal-placement__description">Доставка по Борисову, Борисовскому району и Жодино, самовывоз из
+            магазинов в Борисове.</p>
+          <div class="modal-placement__btn-wrap">
+            <button class="btn btn-blue">Да, сохранить</button>
+            <button class="btn btn-gray">Выбрать Минск</button>
+          </div>
+          <p class="c-p6 modal-placement__info">От выбранного города зависит наличие товаров и способ доставки.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullWidthContainer navMenu">
+      <div class="container">
+        <ul class='navMenu__list'>
+          <li><a class="c-p4" href="">Цветы и букеты</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Композиции</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Комнатные растения</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Уличные растения</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Уход и подарки</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Услуги</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><a class="c-p4" href="">Акции</a></li>
+          <img src="../../icons/dot.svg" alt="">
+          <li><span><i id="search" class="icon icon-loop search-loop"></i></span></li>
+        </ul>
+        <div class="navMenu__inputBlock">
+          <div class="container navMenu__inputWrap">
+            <input class="pageInput" type="text">
+            <span><i id='clearPageInput' class="icon icon-cross"></i></span>
+            <span><i class="icon icon-loop search-loop"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomMenuWrapper">
+      <div class="bottomMenu">
+        <!-- <div class="container bottomMenu-tab bottomMenu-activeTab">
+                <p class="c-p4 bottomMenu__tabTitle">Ваш город Минск?</p>
+                <p class="c-p5 bottomMenu__tabDescription">Доставка по Минску и районам в пределах 20 км от МКАД.</p>
+                <div class="bottomMenu__tabInputBlock">
+                    <label for="">Имя</label>
+                    <input type="text">
+                </div>
+                <button class="btn btn-blue bottomMenu__tabBtn">да, сохранить</button>
+            </div> -->
+        <div class="container bottomMenu__requisites bottomMenu-tab">
+          <p class="c-p4 bottomMenu__tabTitle">Реквизиты?</p>
+          <p class="c-p5 bottomMenu__tabDescription">ЧАСТНОЕ ТОРГОВОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ «МАГВИР» </p>
+          <p class="c-p5 bottomMenu__tabDescription">(ЧУП «МАГВИР»)</p>
+          <p class="c-p5 bottomMenu__tabDescription">Республика Беларусь, Минская обл., г. Борисов, ул. Строителей, 45А,
+            222511 </p>
+          <p class="c-p5 bottomMenu__tabDescription">УНП 690316639&nbsp;&nbsp;&nbsp;&nbsp; ОКПО 292485256000</p>
+          <p class="c-p4 bottomMenu__tabTitle">Расчётный счёт</p>
+          <p class="c-p5 bottomMenu__tabDescription">BY42 BAPB 3012 3177 9001 0000 0000 в ОАО «Белагропромбанк»</p>
+          <p class="c-p5 bottomMenu__tabDescription">г. Минск, пр. Жукова, 3, BIC BAPBBY2X</p>
+          <button class="btn btn-blue bottomMenu__tabBtn">Скопировать</button>
+        </div>
+        <div class="container bottomMenu__place bottomMenu-tab">
+          <p class="c-p3">Ваш город Минск?</p>
+          <p class="c-p5">Доставка по Минску и районам в пределах 20 км от МКАД.</p>
+          <div class="bottomMenu__place-btnWrap">
+            <button class="btn btn-blue">Да, сохранить</button>
+            <button class="btn btn-gray">Выбрать Борисов</button>
+          </div>
+          <p class="c-p5">От выбранного города зависит наличие товаров и способ доставки.</p>
+        </div>
+        <div class="bottomMenu-tab bottomMenu__requestCall-success container">
+          <p class="c-p4 bottomMenu__tabTitle">Заявка отправлена</p>
+          <p class="c-p5 bottomMenu__tabDescription">Менеджер проконсультирует, ответит на ваши вопросы, поможет с
+            выбором.</p>
+          <button class="btn btn-blue modal__btn closeModal">Продолжить покупки</button>
+        </div>
+        <div class="bottomMenu-tab bottomMenu__requestCall container">
+          <p class="c-p4 bottomMenu__tabTitle">Заказать звонок</p>
+          <p class="c-p5 bottomMenu__tabDescription">Менеджер проконсультирует, ответит на ваши вопросы, поможет с
+            выбором. </p>
+          <div class="modal__requestCall-contentWrap">
+            <div class="modal__requestCall-inputWrap">
+              <label class="c-p4" for="">Имя</label>
+              <input class="c-p5" type="text">
+            </div>
+            <div class="modal__requestCall-inputWrap">
+              <label class="c-p4" for="">Номер телефона</label>
+              <input class="c-p5" type="text">
+            </div>
+            <button class="btn btn-blue modal__btn btn-submitReqCall">Отправить</button>
+          </div>
+        </div>
+        <div class="bottomMenu-tab bottomMenu__catalog container">
+          <ul class="bottomMenu__catalog-list">
+            <li class="bottomMenu__catalog-item"><a class='c-p6' href="">Цветы и букеты</a></li>
+            <li class="bottomMenu__catalog-item"><a class='c-p6' href="">Композиции</a></li>
+            <li class="bottomMenu__catalog-item"><a class='c-p6' href="">Комнатные растения</a></li>
+            <li class="bottomMenu__catalog-item"><a class='c-p6' href="">Уличные растения</a></li>
+            <li class="bottomMenu__catalog-item"><a class='c-p6' href="">Уход и подарки</a></li>
+            <li class="bottomMenu__catalog-item"><a class='c-p6' href="">Услуги</a></li>
+            <li class="bottomMenu__catalog-item"><a class='c-p6' href="">Акции</a></li>
+          </ul>
+        </div>
+        <div class="bottomMenu__container">
+          <div class="container">
+            <div class="bottomMenu__itemWrap">
+              <span><i class="icon icon-home"></i></span>
+              <p>Главная</p>
+            </div>
+            <div id='bottomCatalog' class="bottomMenu__itemWrap">
+              <span><i class="icon icon-catalog"></i></span>
+              <p>Каталог</p>
+            </div>
+            <div class="bottomMenu__itemWrap">
+              <span><i class="icon icon-bag"></i></span>
+              <p>Корзина</p>
+            </div>
+            <div id='bottomPlace' class="bottomMenu__itemWrap">
+              <span><i class="icon icon-place"></i></span>
+              <p>Минск</p>
+            </div>
+            <div class="bottomMenu__itemWrap">
+              <span><i class="icon icon-chat"></i></span>
+              <p>Чат</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="breadContainer">
+      <div class="container">
+          <a class="breadItem c-link">Главная</a>
+          <img src="../../icons/dot.svg" alt="">
+          <a class="breadItem c-link">Корзина</a>
+      </div>
+    </div>
+    <section class="container-sm">
+      <p class="c-p1">В&nbsp;корзине пока пусто</p>
+      <p class="c-p3">Выберите нужные товары в&nbsp;каталоге<br>или найдите через поиск.</p>
+      <a class="btn btn-blue" href="/">Перейти на главную</a>
+    </section>
+  </main>
+  
+
+  <footer>
+    <div class="fullWidthContainer footer">
+      <div class="container">
+        <div class="footer__paidBlock">
+          <div class="header__titleBlock">
+            <img src="../../icons/logo.svg" alt="">
+            <img src="../../icons/title.svg" alt="">
+          </div>
+          <div class="footer__paidImagesBlock">
+            <img src="./img/paid1.png" alt="">
+            <img src="./img/paid2.png" alt="">
+            <img src="./img/paid3.png" alt="">
+            <img src="./img/paid4.png" alt="">
+            <img src="./img/paid5.png" alt="">
+            <img src="./img/paid6.png" alt="">
+            <img src="./img/paid7.png" alt="">
+            <img src="./img/paid8.png" alt="">
+            <img src="./img/paid9.png" alt="">
+            <img src="./img/paid10.png" alt="">
+            <img src="./img/paid11.png" alt="">
+          </div>
+          <div class="footer__termsOfUseBlock">
+            <a class="footer__termsOfUse" href="">Пользовательское соглашение</a>
+            <a id='requisitesMobile' class="footer__termsOfUse">Реквизиты</a>
+          </div>
+        </div>
+        <ul class="menu__list">
+          <p class="menu-title c-p4">Каталог <img src="../../icons/smallArrow.svg" alt=""></p>
+          <li><a class="c-p5">Цветы и букеты</a></li>
+          <li><a class="c-p5" href="">Композиции</a></li>
+          <li><a class="c-p5" href="">Комнатные растения</a></li>
+          <li><a class="c-p5" href="">Уличные растения</a></li>
+          <li><a class="c-p5" href="">Уход и подарки</a></li>
+          <li><a class="c-p5" href="">Услуги </a></li>
+          <li><a class="c-p5" href="">Акции </a></li>
+        </ul>
+        <ul class="menu__list">
+          <p class="menu-title c-p4">Покупателю <img src="../../icons/smallArrow.svg" alt=""></p>
+          <li><a class="c-p5" href="">Как заказать</a></li>
+          <li><a class="c-p5" href="">Оплата</a></li>
+          <li><a class="c-p5" href="">Доставка</a></li>
+          <li><a class="c-p5" href="">Политика скидок</a></li>
+          <li><a class="c-p5" href="">Гарантии</a></li>
+          <li><a class="c-p5" href="">Документы</a></li>
+          <li><a class="c-p5" href="">Подарочные сертификаты</a></li>
+        </ul>
+        <div class="footer__moreInfoBlock">
+          <p class="c-p4">Контакты</p>
+          <p class="c-p5">ежедневно с 8 до 20.30</p>
+          <a class="c-p5" href="mailto:manager@edem.by">manager@edem.by</a>
+          <a class="c-p5" href="tel:+375296731010">+375 29 673-10-10</a>
+          <button class="btn-blue btn btn-requestCall">Заказать звонок</button>
+
+          <div class="footer__socialBlock">
+            <a href="https://www.instagram.com/flowersedem/" class='c-link'>
+              <img src="./img/instagram.svg" alt="">
+            </a>
+            <a href="https://web.facebook.com/edemflower/?_rdc=1&_rdr" class='c-link'>
+              <img src="./img/facebook.svg" alt="">
+            </a>
+            <a href="https://vk.com/edemflower" class="c-link">
+              <img src="./img/vk.svg" alt="">
+            </a>
+            <a href="https://ok.ru/edemflower" class="c-link">
+              <img src="./img/odnoklass.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fullWidthContainer copyright">
+      <div class="container">
+        <a id='requisites' class="c-p4 c-link">Реквизиты</a>
+        <p class="c-p5 companyTitle">© ЧУП «Магвир», 2021</p>
+        <p class="c-p5 cheshireTitle">Создание сайта и развитие проекта — <a class="c-link"
+            href="https://cheshire-cat.by/">Чеширский Кот</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modalContent modal-search">
+      <div class="searchCard__container">
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-newPrice">от 4,50 руб.<span class="searchCard-oldPrice">от 4,50 руб.</span></p>
+          </div>
+          <span class="searchCard-discount">-10%</span>
+        </div>
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-price">163,50 руб.</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-newPrice">от 4,50 руб.<span class="searchCard-oldPrice">от 4,50 руб.</span></p>
+          </div>
+          <span class="searchCard-discount">-10%</span>
+        </div>
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-price">163,50 руб.</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-newPrice">от 4,50 руб.<span class="searchCard-oldPrice">от 4,50 руб.</span></p>
+          </div>
+          <span class="searchCard-discount">-10%</span>
+        </div>
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+          </div>
+        </div>
+        <div class="searchCard">
+          <img src="./img/flower.png" alt="">
+          <div class="searchCard__textBlock">
+            <p class="c-p2 searchCard-title">Роза Кахала</p>
+            <p class="c-p5 searchCard-price">163,50 руб.</p>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-blue">Посмотреть все результаты</button>
+
+      <span><i class="icon icon-cross closeModal"></i></span>
+    </div>
+    <div class="modalContent modal-requisites">
+      <p class="c-p1 modal__title">Реквизиты?</p>
+      <p class="c-p5 modal__description">ЧАСТНОЕ ТОРГОВОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ «МАГВИР» </p>
+      <p class="c-p5 modal__description">(ЧУП «МАГВИР»)</p>
+      <p class="c-p5 modal__description">Республика Беларусь, Минская обл., г. Борисов</p>
+      <p class="c-p5 modal__description">ул. Строителей, 45А, 222511</p>
+      <p class="c-p5 modal__description">УНП 690316639&nbsp;&nbsp;&nbsp;&nbsp; ОКПО 292485256000</p>
+      <p class="c-p2 modal__subtitle">Расчётный счёт</p>
+      <p class="c-p5 modal__description">BY42 BAPB 3012 3177 9001 0000 0000</p>
+      <p class="c-p5 modal__description"> в ОАО «Белагропромбанк»</p>
+      <p class="c-p5 modal__description">г. Минск, пр. Жукова, 3</p>
+      <p class="c-p5 modal__description">BIC BAPBBY2X</p>
+      <button class="btn btn-blue modal__btn">Скопировать</button>
+
+      <span><i class="icon icon-cross closeModal"></i></span>
+    </div>
+    <div class="modalContent modal-requestCall">
+      <p class="c-p1 modal__title">Заказать звонок</p>
+      <p class="c-p5 modal__description">Менеджер проконсультирует, ответит на ваши вопросы, поможет с выбором.</p>
+      <div class="modal__requestCall-contentWrap">
+        <div class="modal__requestCall-inputWrap">
+          <label class="c-p4" for="">Имя</label>
+          <input class="c-p5" type="text">
+        </div>
+        <div class="modal__requestCall-inputWrap">
+          <label class="c-p4" for="">Номер телефона</label>
+          <input class="c-p5" type="text">
+        </div>
+        <button class="btn btn-blue modal__btn btn-submitReqCall">Отправить</button>
+      </div>
+
+
+      <span><i class="icon icon-cross closeModal"></i></span>
+    </div>
+    <div class="modalContent modal-requestCall-success">
+      <p class="c-p1 modal__title">Заявка отправлена</p>
+      <p class="c-p5 modal__description">Ждите звонка в течение 1 часа. Работаем ежедневнос 8 до 20, если уже поздно —
+        перезвоним завтра утром.</p>
+      <button class="btn btn-blue modal__btn closeModal">Продолжить покупки</button>
+
+      <span><i class="icon icon-cross closeModal"></i></span>
+    </div>
+  </div>
+  <script src="./header-footer.js"></script>
+</body>
+
+</html>

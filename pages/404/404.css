@@ -1,0 +1,145 @@
+body::before {
+  display: none;
+}
+
+.page_404 {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.page_404 p {
+  max-width: 554px;
+}
+
+.page_404__title {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+  color: #70768A;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.page_404__button {
+  display: block;
+  width: fit-content;
+  padding: 15px 30px;
+  background: #869BD8;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #f6EEEc !important;
+  transition: 0.3s;
+}
+
+.page_404__button:hover {
+  background: #6D86CF;
+  border-radius: 7px;
+}
+
+.page_404__button:active {
+  background: #6179BE;
+}
+
+.page_404 .c-h1 {
+  margin-bottom: 20px;
+}
+
+.page_404 .c-p5 {
+  margin-bottom: 50px;
+}
+
+body {
+  background: url(./img/bg-lg.png);
+}
+
+.header,
+.navMenu {
+  background: none;
+}
+
+@media (max-width: 1439.98px) {
+  body {
+    background: url(./img/bg-md.png);
+  }
+
+  .page_404 {
+    margin-top: 75px;
+    margin-bottom: 120px;
+  }
+
+  .page_404__title {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .page_404 .c-p5 {
+    margin-bottom: 30px;
+  }
+
+  .page_404 p {
+    max-width: 471px;
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  body {
+    background: url(./img/bg-sm.png);
+  }
+
+  .page_404 {
+    margin-top: 40px;
+    margin-bottom: 544px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page_404 .c-p5 {
+    margin-bottom: 20px;
+  }
+
+  .page_404__title {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+
+  .page_404 p {
+    max-width: 426px;
+    text-align: center;
+  }
+
+  .page_404__button,
+  .page_404__button:hover {
+    padding: 17px 20px;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  body {
+    background: url(./img/bg-xs.png);
+  }
+
+  .page_404 {
+    margin-top: 20px;
+    margin-bottom: 386px;
+  }
+
+  .page_404 p {
+    max-width: 330px;
+    text-align: center;
+  }
+
+  .page_404__button,
+  .page_404__button:hover {
+    padding: 17px 20px;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+  }
+}

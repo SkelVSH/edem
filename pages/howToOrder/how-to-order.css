@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FBF9F7;
+}
+
+.howToOrder {
+  margin-top: 75px;
+  margin-bottom: 150px;
+  padding-left: 121px;
+  position: relative;
+}
+
+.howToOrder-step {
+  width: 796px;
+  position: relative;
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid #70768A;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 83px;
+}
+
+.howToOrder-step__num {
+  position: absolute;
+  align-self: center;
+  top: -28px;
+  padding: 10px 20px;
+  background: #C7D2F1;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.howToOrder-step--wrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.howToOrder-step__small_text {
+  width: 332px;
+  margin-right: auto;
+}
+
+.howToOrder-step__postcard {
+  margin-right: 30px;
+}
+
+.howToOrder-step__margin {
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+
+.howToOrder-step__margin:first-child {
+  margin-top: 0;
+}
+
+.howToOrder-step__list li {
+  margin-bottom: 10px;
+}
+
+.howToOrder-step__list li:last-child {
+  margin-bottom: 0;
+}
+
+.howToOrder > .c-p3 {
+  max-width: 780px;
+}
+
+.howToOrder > .c-p3:last-child {
+  margin-top: 30px;
+}
+
+.howToOrder-step:not(:first-child) .howToOrder-step__num::before {
+  content: '';
+  width: 1px;
+  height: 25px;
+  background: #70768A;
+  position: absolute;
+  top: -40px;
+}
+
+.howToOrder-step__colored {
+  padding: 30px 40px;
+  background: #F6EEEC;
+  border-radius: 7px;
+  margin-top: 30px;
+}
+
+.howToOrder-step__colored--margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.howToOrder-float {
+  width: 433px;
+  padding: 60px 40px;
+  background: #EFE5E3;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.howToOrder-float .c-p5 {
+  margin-top: 15px;
+}
+
+@media (max-width: 1439.98px) {
+  .howToOrder {
+    padding-left: 104px;
+    margin-top: 50px;
+    margin-bottom: 120px;
+  }
+
+  .howToOrder-step {
+    width: 679px;
+    padding: 30px;
+  }
+
+  .howToOrder-float {
+    width: 367px;
+    padding: 40px 30px;
+  }
+
+  .howToOrder-step__num {
+    padding: 5px 15px;
+    top: -20px;
+  }
+
+  .howToOrder-step__margin {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .howToOrder-step__postcard {
+    width: 120px;
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  .howToOrder-step__colored {
+    margin-top: 20px;
+    padding: 20px 30px;
+  }
+
+  .howToOrder-step:not(:first-child) .howToOrder-step__num::before {
+    height: 20px;
+    top: -30px;
+  }
+
+  .howToOrder-step {
+    margin-bottom: 60px;
+  }
+
+  .howToOrder > .c-p3 {
+    max-width: 679px;
+  }
+
+  .howToOrder > .c-p3:last-child {
+    margin-top: 20px;
+  }
+
+  .howToOrder-float .c-p5 {
+     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  .howToOrder {
+    padding-left: 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  
+  .howToOrder-step {
+    width: 453px;
+    padding: 20px;
+    margin-bottom: 39px;
+  }
+
+  .howToOrder > .c-p3 {
+    max-width: 453px;
+  }
+
+  .howToOrder-float {
+    width: 207px;
+    padding: 20px 12px;
+  }
+
+  .howToOrder-step__small_text {
+    width: 221px;
+  }
+
+  .howToOrder-step__colored {
+    margin-top: 15px;
+    padding: 15px 20px;
+  }
+
+  .howToOrder-step__margin {
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  .howToOrder-step__postcard {
+    width: 80px;
+    height: 53px;
+    margin-right: 15px;
+  }
+
+  .howToOrder-step:not(:first-child) .howToOrder-step__num::before {
+    height: 13px;
+    top: -18px;
+  }
+
+  .howToOrder-step__num {
+    top: -16px;
+  }
+
+  .howToOrder-step__colored--margin {
+    margin-bottom: 15px;
+  }
+
+  .howToOrder > .c-p3:last-child {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .howToOrder-float {
+    position: relative;
+    width: 100%;
+    margin-bottom: 56px;
+    margin-top: -46px;
+  }
+
+  .howToOrder-step {
+    width: 100%;
+    margin-bottom: 56px;
+  }
+
+  .howToOrder-step:not(:first-child) .howToOrder-step__num::before {
+    height: 20px;
+    top: -30px;
+  }
+
+  .howToOrder > .c-p3:not(:last-child) {
+    margin-top: -16px;
+  }
+
+  .howToOrder {
+    margin-bottom: 60px;
+  }
+}

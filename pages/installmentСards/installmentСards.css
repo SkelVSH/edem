@@ -1,0 +1,172 @@
+.installment__cardsBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.installment__subTitle,
+.installment__cardsBlock-description,
+.installment__cardsBlock {
+    margin-top: 75px;
+}
+
+.installment__btn {
+    width: fit-content;
+    padding: 25px 40px;
+    background: #F6EEEC;
+    border-radius: 1px;
+}
+
+.installment__btn,
+.installment__cardContainer,
+.installment__cardsBlock-description,
+.installment__tips,
+.installment__description {
+    margin-top: 30px;
+}
+
+.installment__cardContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    width: fit-content;
+}
+
+.installment__card {
+    position: relative;
+    width: 817px;
+    padding: 25px 25px 25px 50px;
+    border: 1px solid #70768A;
+    border-radius: 1px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.installment__card-number {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #C7D2F1;
+    border-radius: 7px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intallment__line {
+    width: 1px;
+    height: 25px;
+    background: #70768A;
+}
+
+.installment {
+    margin-bottom: 150px;
+}
+
+.installment__card-graycontent {
+    padding: 25px 30px;
+    background: #F6EEEC;
+    border-radius: 1px;
+}
+
+@media (max-width: 1439px) {
+    .installment__subTitle,
+    .installment__cardsBlock-description,
+    .installment__cardsBlock {
+        margin-top: 50px;
+    }
+
+    .installment__btn,
+    .installment__cardContainer,
+    .installment__cardsBlock-description,
+    .installment__tips,
+    .installment__description {
+        margin-top: 20px;
+    }
+
+    .installment__cardsBlock img {
+        width: 320px;
+    }
+
+    .installment__card {
+        width: 704px;
+        padding: 20px 20px 20px 40px;
+    }
+
+    .installment__card-number {
+        height: 40px;
+        width: 40px;
+    }
+
+    .intallment__line {
+        height: 20px;
+    }
+
+    .installment__cardContainer {
+        row-gap: 10px;
+    }
+
+    .installment__card-graycontent {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .installment__subTitle,
+    .installment__cardsBlock-description,
+    .installment__cardsBlock {
+        margin-top: 40px;
+    }
+
+    .installment__btn,
+    .installment__cardContainer,
+    .installment__cardsBlock-description,
+    .installment__tips,
+    .installment__description {
+        margin-top: 15px;
+    }
+
+    .installment__cardsBlock img {
+        width: 226px;
+    }
+
+    .installment__card {
+        width: 527px;
+        padding: 15px 10px 15px 25px;
+    }
+
+    .installment__card-number {
+        height: 30px;
+        width: 30px;
+    }
+
+    .intallment__line {
+        height: 13px;
+    }
+
+    .installment__cardContainer {
+        row-gap: 5px;
+    }
+
+    .installment__card-graycontent {
+        padding: 15px 20px;
+    }
+}
+
+
+@media (max-width: 1279px) {
+    .installment__cardsBlock img {
+        width: 226px;
+    }
+
+    .installment__card {
+        width: 278px;
+        margin-left: 15px;
+    }
+}

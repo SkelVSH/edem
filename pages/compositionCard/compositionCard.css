@@ -1,0 +1,176 @@
+.card__mainInfoBlock-priceInfo {
+    margin-top: 30px;
+}
+
+.card__mainInfoBlock-itemInfo {
+    margin-top: 10px;
+}
+
+.leaveReq {
+    margin-top: 30px;
+    display: block;
+}
+
+.careTips__wrapper-comsition {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.careTips__wrapper-comsition .careTips__tipsWrap {
+    margin-left: 0;
+}
+
+.careTips__tipsContainer {
+    width: 604px;
+}
+
+.careTips__tipsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.examples__block .c-h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.examples__block-description {
+    margin-bottom: 100px;
+}
+
+.examples__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.examples__block:last-child .c-p3 {
+    margin-top: 20px;
+    width: 521px;
+}
+
+.examples__block:last-child .c-p3:nth-child(2) {
+    margin-top: 75px;
+}
+
+
+.card__mainInfoBlock-descriptionBlock p:first-child {
+    width: 313px;
+}
+
+.card__mainInfoBlock-descriptionBlock {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.examples__block-img {
+    border-radius: 300px 300px 1px 1px;
+}
+
+.examples__block:last-child .examples__block-img {
+    border-radius: 1px;
+}
+
+
+@media (max-width: 1279px) {
+    .card__mainInfoBlock-descriptionBlock,
+    .leaveReq,
+    .card__mainInfoBlock-priceInfo {
+        margin-left: 380px;
+    }
+
+    .card__mainInfoBlock-descriptionBlock p:first-child {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        width: 194px;
+    }
+
+    .card__mainInfoBlock-descriptionBlock p:last-child {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .examples__block:last-child > img,
+    .examples__block:last-child .c-p3 {
+        width: 330px;
+    }
+
+    .examples {
+        justify-content: space-between;
+    }
+
+    .careTips__wrapper-comsition {
+        align-items: flex-start;
+    }
+    .careTips__wrapper-comsition img {
+        width: 330px;
+        height: initial;
+    }
+
+    .careTips__tipsContainer {
+        width: 330px;
+        row-gap: 20px;
+    }
+
+    .careTips__tipsContainer .c-p1 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .careTips__tipsContainer .c-p3,
+    .careTips__tipsContainer .c-p2 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    
+    .careTips__wrapper-comsition {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .careTips__wrapper-comsition * {
+        width: 100%;
+    }
+
+    .careTips__tipsContainer,
+    .careTips__tipsContainer * {
+        width: 100%;
+    }
+
+    .examples__block:last-child > img {
+        width: 100%;
+    }
+
+    .examples__block,
+    .examples__block:last-child .c-p3 {
+        width: 100%;
+    }
+
+    
+    .card__mainInfoBlock-descriptionBlock, .leaveReq, .card__mainInfoBlock-priceInfo {
+        margin-left: 0;
+    }
+
+    .leaveReq {
+        display: none;
+    }
+
+    .card__mainContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__mainInfoBlock-breadBlock {
+        order: -1;
+    }
+}

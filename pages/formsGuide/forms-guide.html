@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Формы</title>
+  <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="./forms-guide.css">
+</head>
+<body class="container">
+  <form class="js-form">
+    <label class="form-label js-required">
+      <p class="c-p4">Имя (обяз.)</p>
+      <input class="form-input" type="text" name="name">
+      <p class="form-hint">*обязательное поле</p>
+    </label>
+    <label class="form-label js-required">
+      <p class="c-p4">Номер телефона (обяз.)</p>
+      <input class="form-input" type="text" placeholder="+375 (__) ___-__-__" name="phone">
+      <p class="form-hint">*обязательное поле</p>
+    </label>
+    <label class="form-label">
+      <p class="c-p4">Пожелания (необяз.)</p>
+      <input class="form-input" type="text" name="advice">
+    </label>
+    <div class="form-submit__wrap">
+      <button class="form-submit btn btn-blue" disabled>отправить</button>
+      <span class="form-submit-cover"></span>
+    </div>
+  </form>
+
+  <script src="../../js/validation.js"></script>
+</body>
+</html>

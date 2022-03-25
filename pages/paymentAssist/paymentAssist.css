@@ -1,0 +1,175 @@
+.breadContainer {
+    width: 60%;
+}
+
+.payAssist__titleDescription {
+    width: 80%;
+}
+
+.payAssist__cardsContainer {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    row-gap: 15px;
+}
+
+.payAssist__card {
+    width: 698px;
+    padding: 25px 25px 25px 50px;
+    margin-left: 25px;
+    position: relative;
+    border: 1px solid #70768A;
+    border-radius: 1px;
+}
+
+.payAssist__card-number {
+    height: 50px;
+    width: 50px;
+    background: #C7D2F1;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%); 
+}
+
+.payAssist__line {
+    height: 25px;
+    width: 1px;
+    background: #70768A;
+}
+
+.payAssist__cardsDescription,
+.payAssist__list,
+.payAssist__cardsContainer,
+.payAssist__description,
+.payAssist__titleDescription {
+    margin-top: 30px;
+}
+
+.payAssist__subTitle,
+.payAssist__cardsTitle {
+    margin-top: 75px;
+}
+
+.payAssist__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.payAssist__logoBlock {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1439px) {
+    .breadContainer {
+        width: 50%;
+    }
+
+    .payAssist__list,
+    .payAssist__cardsContainer,
+    .payAssist__description,
+    .payAssist__titleDescription {
+        margin-top: 20px;
+    }
+    
+    .payAssist__subTitle,
+    .payAssist__cardsTitle {
+        margin-top: 50px;
+    }
+
+    .payAssist__line {
+        height: 20px;
+    }
+
+    .payAssist__card {
+        width: 599px;
+        padding: 20px 20px 20px 40px;
+        margin-left: 20px;
+    }
+
+    .payAssist__card-number {
+        height: 40px;
+        width: 40px;
+    }
+
+    .payAssist__logoBlock img {
+        height: 72px;
+    }
+
+    .payAssist__logoBlock {
+        margin-top: 75px;
+        margin-bottom: 120px;
+    }
+} 
+
+@media (max-width: 1279px) {
+    .breadContainer {
+        width: 100%;
+    }
+
+    .payAssist__list,
+    .payAssist__cardsContainer,
+    .payAssist__description,
+    .payAssist__titleDescription {
+        margin-top: 15px;
+    }
+    
+    .payAssist__subTitle,
+    .payAssist__cardsTitle {
+        margin-top: 40px;
+    }
+
+    .payAssist__line {
+        height: 13px;
+    }
+
+    .payAssist__card {
+        width: 443px;
+        padding: 15px 10px 15px 25px;
+        margin-left: 15px;
+    }
+
+    .payAssist__card-number {
+        height: 30px;
+        width: 30px;
+    }
+
+    .payAssist__logoBlock img {
+        height: 54px;
+    }
+
+    .payAssist__logoBlock {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+} 
+
+@media (max-width: 767px) {
+
+    .payAssist__card {
+        width: 278px;
+    }
+
+    .payAssist__logoBlock img {
+        height: 54px;
+    }
+
+    .payAssist__logoBlock {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: flex-start;
+    }
+} 

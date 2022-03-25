@@ -1,0 +1,828 @@
+body {
+    background: #FBF9F7;;
+}
+
+.space {
+    margin: 100px 0;
+}
+
+.card__mainContent-image {
+    width: 604px;
+    height: 827px;
+    margin-right: 121px;
+    float: left;
+    object-fit: cover;
+}
+
+.card__mainContent {
+    height: 827px;
+}
+
+.promotionContainer {
+    background: #EFE5E3!important;
+    flex-direction: row-reverse;
+}
+
+.promotionContainer .dot {
+    background: #70768A!important;
+}
+
+.promotionContainer * {
+    color: #70768A!important;
+}
+
+
+
+.breadContainer {
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 0!important;
+}
+
+.breadContainer > img {
+    margin: 0 10px;
+}
+
+.breadItem:last-child {
+    width: 100%;
+}
+
+.card__mainInfoBlock-existance {
+    margin-top: 10px;
+}
+
+.card__mainInfoBlock-modBlock {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    row-gap: 12px;
+    column-gap: 1px;
+}
+
+.card__mainInfoBlock-modBlockImgItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    height: 65px;
+}
+
+.card__mainInfoBlock-modBlockImgItem img {
+    width: 50px;
+    height: 50px;
+}
+
+.card__mainInfoBlock-modBlockImgItem-dot {
+    display: none;
+    margin-top: 10px;
+    height: 5px;
+    width: 5px;
+    background: #869BD8;
+    border-radius: 50%;
+
+}
+
+.card__mainInfoBlock-info {
+    margin-top: 40px;
+}
+
+.card__mainInfoBlock-modBlockImgItem-active .card__mainInfoBlock-modBlockImgItem-dot,
+.card__mainInfoBlock-modBlockImgItem:hover .card__mainInfoBlock-modBlockImgItem-dot {
+    display: block;
+}
+
+.card__mainInfoBlock-modBlockTitle {
+    width: 100%;
+}
+
+.card__mainInfoBlock-modBlockItem {
+    border-radius: 1px;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 9px 8px 10px
+}
+
+.card__mainInfoBlock-modBlockItem:hover {
+    background: #C7D2F1;
+}
+
+.card__mainInfoBlock-price {
+    margin-top: 40px;
+}
+
+.card__mainInfoBlock-countBlock {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.card__mainInfoBlock-countBlock > *:hover:not(:nth-child(2n)) {
+    color: #869BD8;
+    cursor: pointer; 
+}
+
+.card__mainInfoBlock-description,
+.card__mainInfoBlock-submitBlock {
+    margin-top: 40px;
+}
+
+.card__mainInfoBlock-description {
+    margin-left: auto;
+    width: 675px;
+}
+
+.cardFactoid {
+    margin-top: 120px;
+    background: #70768A;
+    border-radius: 1px;
+    padding: 90px 121px;
+    width: 1158px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 102px;
+}
+
+.cardFactoid__mainInfo {
+    width: 502px;
+}
+
+.cardFactoid__mainInfo > * {
+    color: #F6EEEC;
+}
+
+.cardFactoid__mainInfo-title {
+    font-size: 50px;
+    line-height: 130%;
+}
+
+.cardFactoid__mainInfo-description {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.cardFactoid__cardBlock {
+    position: relative;
+}
+
+.cardFactoid__cardBlock-bg {
+    width: 554px;
+}
+
+.cardFactoid__cardBlock-container {
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardFactoid__cardBlock-container p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.examples__container {
+    margin-top: 120px;
+}
+
+.examples {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.examples__bigImg {
+    width: 100%;
+    margin-top: 75px;
+}
+
+.examples__block-img {
+    border-radius: 1px;
+}
+
+.examples__block:last-child .examples__block-img {
+    border-radius: 300px 300px 1px 1px;
+}
+
+.examples__block {
+    width: min-content;
+}
+
+.examples__block-description {
+    margin-top: 15px;
+}
+
+.examples__block:first-child .examples__block-description {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shopTips__container {
+    width: 916px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.shopTips__itemContainer {
+    display: flex;
+    column-gap: 75px;
+    margin-top: 75px;
+}
+
+.shopTips__item {
+    width: 255px;
+}
+
+.shopTips__item-title {
+    margin-top: 30px;
+    display: block;
+}
+
+.shopTips__item-title.c-link {
+    color: var(--main-text-color);
+}
+
+.shopTips__item-description {
+    margin-top: 10px;
+}
+
+.shopTips__managerPropose {
+    margin-top: 50px;
+    /* font-size: 20px;
+    line-height: 150%; */
+}
+
+.shopTips__requestCall {
+    margin-top: 30px;
+}
+
+
+.card__container {
+    width: 1158px;
+    margin: auto;
+}
+
+.careTips__wrapper {
+    height: 1520px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 75px;
+    margin-top: 100px;
+}
+
+.careTips__wrapper > img {
+    width: fit-content;
+}
+
+.careTips__tipsWrap {
+    width: 554px;
+}
+
+.careTips__tipsWrap .c-p2 {
+    font-weight: 500;
+}
+
+.careTips__tipsWrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+
+.careTips__tipsWrap:nth-child(2),
+.careTips__tipsWrap:nth-child(6) {
+    margin-left: 121px;
+}
+
+.careTips__tipsWrap:nth-child(4) {
+    margin-top: 75px;
+}
+
+.careTips__wrapper > img:nth-child(5) {
+    align-self: flex-end;
+}
+
+.youtube {
+    height: 470px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.youtube__videoBlock {
+    width: 675px;
+    height: 470px;
+    background: #000;
+    border-radius: 1px;
+}
+
+.youtube__content-description {
+    width: 433px;
+    margin-top: 30px;
+}
+
+.youtube__content-title {
+    width: 380px;
+}
+
+.socials {
+    background: #70768A;
+    border-radius: 1px;
+    padding: 39px 0;
+    margin-top: 150px;
+}
+
+.socials .card__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials .card__container > p {
+    color: #F6EEEC;
+    width: 521px;
+}
+
+.socials__links {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.socials__links > li {
+    width: 60px;
+    height: 60px;
+    border-radius: 1px;
+}
+
+.socials__links > li > a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemsPropose,
+.flowerPropose {
+    margin-top: 150px;
+}
+
+.instagram {
+    background: #70768A;
+    border-radius: 1px;
+    display: flex;
+    margin: 120px auto;
+    align-items: center;
+}
+
+.instagram > p {
+    margin-left: 100px;
+    width: 362px;
+    color: #F6EEEC;
+}
+
+.instagram__imgBlock {
+    width: fit-content;
+    display: flex;
+}
+
+.instagram__imgBlock img:first-child {
+    border-radius: 1px 0 0 1px;
+}
+
+
+@media (max-width: 1439px) {
+    .card__mainInfoBlock-description {
+        width: 521px;
+    }
+
+    .card__mainContent-image {
+        width: 575px;
+        height: 575px;
+    }
+
+    .breadItem {
+        font-size: 12px;
+    }
+    
+    .breadItem:last-child {
+        font-size: 40px;
+    }
+
+    .breadContainer {
+        padding-bottom: 10px!important;
+        padding-top: 0!important;
+    }
+
+    .card__mainInfoBlock-info,
+    .card__mainInfoBlock-price,
+    .card__mainInfoBlock-countBlock,
+    .card__mainInfoBlock-description, .card__mainInfoBlock-submitBlock {
+        margin-top: 30px;
+    }
+
+    .cardFactoid {
+        padding: 75px 104px;
+        width: 992px;
+    }
+
+    .cardFactoid__mainInfo-title {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .cardFactoid__mainInfo-description {
+        font-size: 16px;
+        line-height: 150%;
+        width: 367px;
+    }
+
+    .cardFactoid__cardBlock-bg {
+        width: 471px;
+    }
+
+    .cardFactoid__cardBlock-container {
+        width: 321px;
+    }
+
+    .cardFactoid__cardBlock-container > img {
+        width: 51px;
+        height: 55px;
+    }
+
+
+    .examples__block:first-child > img {
+        width: 521px;
+    }
+
+    .examples__block:last-child > img {
+        width: 417px;
+    }
+
+    .shopTips__container {
+        width: 786px;
+    }
+    
+    .careTips__wrapper > img:nth-child(5),
+    .careTips__wrapper > img:first-child {
+        width: 521px;
+    }
+
+    .careTips__wrapper > img:nth-child(3) {
+        width: 625px;
+    }
+
+    .card__container {
+        width: 992px;
+    }
+
+    .careTips__tipsWrap:nth-child(2), .careTips__tipsWrap:nth-child(6) {
+        margin-left: 104px;
+    }
+
+    .careTips__tipsWrap {
+        width: 471px;
+    }
+
+    .careTips__wrapper {
+        height: 1275px;
+        row-gap: 50px;
+    }
+
+    .careTips__tipsWrap:nth-child(4) {
+        margin-top: 30px;
+    }
+
+    .youtube__videoBlock {
+        width: 575px;
+        height: 400px;
+    }
+
+    .youtube {
+        height: 400px;
+    }
+
+    .youtube__content-description {
+        width: 367px;
+    }
+    
+    .youtube__content-title {
+        width: 330px;
+    }
+
+    .socials__links > li {
+        width: 50px;
+        height: 50px;
+    }
+
+    .socials__links > li img {
+        width: 100%;
+    }
+
+    .socials .card__container > p {
+        width: 500px;
+    }
+
+    .instagram__imgBlock img {
+        width: 200px;
+    }
+
+    .instagram > p {
+        margin-left: 75px;
+        width: 263px;
+    }
+}
+
+
+@media (max-width: 1279px) {
+
+    .card__mainInfoBlock-description {
+        width: 330px;
+    }
+    .card__mainContent-image {
+        width: 330px;
+        height: 330px;
+    }
+
+    .card__mainInfoBlock-info {
+        margin-top: 20px;
+    }
+
+    .cardFactoid {
+        padding: 40px 40px 40px 60px;
+        width: 600px;
+    }
+
+    .cardFactoid__mainInfo-title {
+        font-size: 25px;
+        line-height: 130%;
+        width: 230px;
+    }
+
+    .cardFactoid__mainInfo-description {
+        width: 250px;
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .cardFactoid {
+        column-gap: 60px;
+    }
+
+    .cardFactoid__cardBlock-bg {
+        width: 290px;
+    }
+
+    .cardFactoid__cardBlock-container > img {
+        width: 30px;
+        height: 33px;
+    }
+
+    .cardFactoid__cardBlock-container p {
+        width: 230px;
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .examples__block:first-child > img {
+        width: 330px;
+    }
+
+    .examples__block:last-child > img {
+        width: 247px;
+    }
+
+    .shopTips__container {
+        width: 525px;
+    }
+    
+    .shopTips__itemContainer {
+        column-gap: 30px;
+    }
+
+    .shopTips__managerPropose {
+        margin-top: 40px;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .careTips__tipsWrap:nth-child(2), .careTips__tipsWrap:nth-child(6) {
+        margin-left: 0;
+    }
+
+    .careTips__tipsWrap,
+    .careTips__wrapper > img:nth-child(3),
+    .careTips__wrapper > img:nth-child(5), .careTips__wrapper > img:first-child {
+        width: 330px;
+    }
+
+
+    .careTips__tipsWrap .c-p1 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    
+    .careTips__tipsWrap .c-p3,
+    .careTips__tipsWrap .c-p2 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .careTips__wrapper {
+        height: 855px;
+        row-gap: 40px;
+    }
+
+    .card__container {
+        width: 660px;
+    }
+
+    .youtube__content-title {
+        width: 240px;
+    }
+
+    .instagram {
+        flex-direction: column-reverse;
+    }
+
+    .instagram__imgBlock img {
+        width: 175px;
+    }
+
+    .instagram__imgBlock img:first-child {
+        border-radius:  0 0 0 15px;
+    }
+
+    .instagram__imgBlock img:last-child {
+        border-radius:  0 0 15px 0;
+    }
+
+    .instagram > p {
+        margin-left: 0;
+        width: 330px;
+        margin: auto;
+        font-size: 14px;
+        line-height: 150%;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .catalog__diffCardsContainer > *:last-child {
+        display: none;
+    }
+
+    .catalog__gridContainer > div:nth-child(2n) {
+        top: 0!important;
+    }
+
+    .youtube__videoBlock {
+        width: 330px;
+        height: 230px;
+    }
+
+    .youtube {
+        height: 230px;
+    }
+
+    .youtube__content-description {
+        width: 290px;
+    }
+
+    .socials .card__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 20px;
+    }
+
+    .socials__links > li {
+        height: 48px;
+        width: 48px;
+    }
+
+    .card__mainInfoBlock-existance,
+    .card__mainInfoBlock-submitBlock,
+    .card__mainInfoBlock-countBlock {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .card__mainContent {
+        flex-direction: column;
+    }
+
+    .card__mainContent-image {
+        float: initial;
+    }
+
+    .cardFactoid {
+        flex-direction: column;
+        padding: 40px 35px;
+        width: 290px;
+    }
+
+    .cardFactoid__mainInfo > *,
+    .cardFactoid__cardBlock {
+        width: 100%;
+    }
+
+    
+    .cardFactoid__mainInfo {
+        width: 250px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .shopTips__itemContainer,
+    .examples {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .shopTips__container {
+        width: 330px;
+    }
+
+    .shopTips__itemContainer {
+        margin-left: 45px;
+    }
+
+    .careTips__wrapper {
+        height: initial;
+    }
+
+    .careTips__wrapper > img:first-child {
+        order: 1;
+    }
+
+    .careTips__wrapper > .careTips__tipsWrap:nth-child(4) {
+        order: 2;
+    }
+
+    .careTips__wrapper > img:nth-child(3) {
+        order: 3;
+    }
+
+    
+    .careTips__wrapper > .careTips__tipsWrap:nth-child(2) {
+        order: 4;
+    }
+
+    .careTips__wrapper > img:nth-child(5) {
+        order: 5;
+    }
+
+    .careTips__wrapper > .careTips__tipsWrap:nth-child(6) {
+        order: 6;
+    }
+
+    .youtube {
+        width: 330px;
+        height: initial;
+    }
+
+    .youtube__content-title {
+        margin-bottom: 20px;
+    }
+
+    .youtube__content-description {
+        order: 2;
+        width: 290px;
+    }
+
+    .socials,
+    .card__container {
+        width: 360px;
+    }
+
+    .socials .card__container > p {
+        width: 330px;
+    }
+
+    .socials__links {
+        column-gap: 2px;
+    }
+
+    .instagram {
+        width: 360px;
+    }
+
+    .instagram__imgBlock {
+        overflow: hidden;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+body {
+    padding: 100px 0;
+}
+
+.filterMenu {
+    margin-bottom: 60px!important;
+}
+
+.sort {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.sort img {
+    margin-left: 6px;
+}
+
+.catalog__container {
+    display: none;
+    max-height: 0;
+    margin-top: 0!important;
+}
+
+.catalog__container-active {
+    display: flex;
+    max-height: initial;
+}
+
+.filterItem {
+    display: flex;
+    align-items: center;
+}
+
+.filter-disabled p {
+    color: #70768A;
+    opacity: 0.5;
+}
+
+.filter-disabled p:hover {
+    color: #70768A;
+    opacity: 0.5;
+}
+
+.selectedFiltersCount {
+    opacity: 1!important;
+}
+
+.filterMenu {
+    width: 1400px;
+}
+
+.filter-active p {
+    color: #869BD8;
+}

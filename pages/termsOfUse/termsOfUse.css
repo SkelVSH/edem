@@ -1,0 +1,162 @@
+.container-sm {
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.terms {
+  margin-bottom: 183px;
+}
+
+.terms-list li {
+  margin: 30px 0;
+}
+
+.terms-list__acc {
+  display: none;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 5px;
+  border: none;
+  background: none;
+  text-align: start;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.terms-list__acc::before {
+  content: '';
+  margin-left: 15px;
+}
+
+.terms-list__acc img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.3s;
+}
+
+.ordered {
+  list-style: none;
+  counter-reset: li;
+}
+
+.ordered li::before {
+  counter-increment: li;
+  content: counters(li, ".") ". ";
+}
+
+.unordered {
+  list-style: none;
+}
+
+.unordered li::before {
+  content: "— ";
+  position: relative;
+}
+
+li.terms-list__title {
+  margin-top: 75px;
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.acc-content {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.acc-content .c-p4 {
+  margin-top: 30px;
+}
+
+ol ol ul, ol ol ol {
+  margin-left: 20px;
+}
+
+ol ol ul li, ol ol ol li {
+  margin: 15px 0 !important;
+}
+
+ol ol ol ul {
+  margin-left: 0 !important;
+}
+
+@media (max-width: 1439px) {
+  .container-sm {
+    width: 992px;
+  }
+  .acc-content .c-p4 {
+    margin-top: 20px;
+  }
+  li.terms-list__title {
+    margin-top: 50px !important;
+    font-size: 20px;
+  }
+  .acc-content {
+    font-size: 16px;
+  }
+  .terms-list li {
+    margin: 20px 0;
+  }
+  ol ol ul li, ol ol ol li {
+    margin: 10px 0 !important;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .acc-content .c-p4 {
+    margin-top: 15px;
+  }
+  .container-sm {
+    width: 700px;
+  }
+  li.terms-list__title {
+    font-size: 14px;
+    margin-top: 40px !important;
+  }
+  .acc-content {
+    font-size: 12px;
+  }
+  .terms-list li {
+    margin: 10px 0;
+  }
+  ol ol ul li, ol ol ol li {
+    margin: 10px 0 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-sm {
+    width: 330px;
+  }
+  .terms-list__title span {
+    display: none;
+  }
+  .terms-list__acc {
+    display: inline;
+  }
+  .terms-list__title::before {
+    position: absolute;
+    font-size: 14px;
+  }
+  .acc-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .acc-active img {
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+  li.terms-list__title {
+    margin-top: 20px !important;
+  }
+  ol ol ul, ol ol ol {
+    margin-left: 10px;
+  }
+}

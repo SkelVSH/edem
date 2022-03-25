@@ -1,0 +1,287 @@
+
+
+.composition__bigCard {
+    width: calc(65% - 15px);
+    border-radius: 1px;
+}
+
+.composition__bigCard .catalog__card {
+    background-image: url(../flowersCatalog/img/bigCardBg.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 917px;
+}
+
+.composition__bigCard .catalog__card:hover {
+    background-image: url(../flowersCatalog/img/bigCardBg.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.composition__bigCard-left {
+    float: left;
+}
+
+.compositions__container {
+    display: block;
+}
+
+.compositions__container .catalog__cardWrapper {
+    display: inline-block;
+}
+
+.compositions__container .catalog__cardWrapper:nth-child(2) {
+    margin: 0 calc(5% - 17px);
+}
+.compositions__container .catalog__cardWrapper:nth-child(6) {
+    margin-top: 20px;
+}
+
+.compositions__container .catalog__cardWrapper:nth-child(5),
+.compositions__container .catalog__cardWrapper:nth-child(4) {
+    margin-top: 50px;
+}
+
+.compositions__container .catalog__cardWrapper:nth-child(5),
+.compositions__container .catalog__cardWrapper:nth-child(6) {
+    margin-left: calc(5% - 15px);
+}
+
+.compositions__container .composition__mediumCard {
+    width: 45%;
+    margin-top: 50px;
+}
+
+.compositions__container .composition__mediumCard:nth-child(7) {
+    margin-right: calc(10% - 30px);
+}
+
+.compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard) img {
+    width: 342px;
+    height: 342px;
+}
+
+.compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard):hover img {
+    transform: scale(1.05)
+}
+.composition__bigCard:hover img {
+    width: 793px!important;
+    height: 793px!important;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    transition: all 0.3s ease;
+}
+
+.factoid {
+    display: inline-block;
+    width: 27%;
+    transform: translate(0, -30%);
+}
+
+.factoid .dot {
+    margin: auto;
+    margin-top: 30px;
+}
+
+.compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard) {
+    min-height: 433px;
+    height: initial;
+}
+
+.composition__bigCard img {
+    width: 773px!important;
+    height: 773px!important;
+}
+
+
+@media (max-width: 1439px) {
+    .composition__bigCard img {
+        width: 658px!important;
+        height: 658px!important;
+    }
+
+    .compositions__container .catalog__cardWrapper:nth-child(6) {
+        margin-top: 50px;
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard) .catalog__card-title {
+        font-size: 16px!important;
+        line-height: 150%;
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard) .catalog__card-price {
+        font-size: 14px!important;
+        line-height: 150%;
+    }
+
+    
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard) img {
+        width: 287px;
+        height: 287px;
+    }
+    
+    .compositions__container .catalog__cardWrapper {
+        min-height: 367px;
+    }
+    
+    .composition__bigCard > .catalog__card,
+    .composition__bigCard {
+        min-height: 763px!important;
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard) {
+        min-height: 367px;
+        height: initial;
+    }
+}
+
+
+@media (max-width: 1279px) {
+    .factoid,
+    .catalog__cardWrapper {
+        width: 30%;
+    }
+
+    .composition__bigCard img {
+        width: 378px!important;
+        height: 378px!important;
+    }
+
+    .composition__bigCard {
+        width: calc(65% - 15px);
+    }
+
+    .composition__bigCard {
+        width: calc(65% - 15px);
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard) img {
+        width: 164px;
+        height: 164px;
+    }
+
+    .catalog__gridContainer > div:nth-child(2n) {
+        top: 0;
+    }
+    
+    .composition__bigCard > .catalog__card,
+    .composition__bigCard {
+        min-height: 453px!important;
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard) {
+        min-height: 207px;
+        height: initial;
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard) .catalog__card-title {
+        font-size: 12px!important;
+        line-height: 18px;
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard) .catalog__card-price {
+        font-size: 10px!important;
+        line-height: 15px;
+        margin-top: 0;
+    }
+
+    
+    .composition__bigCard .catalog__card-price {
+        font-size: 14px!important;
+        line-height: 21px;
+    }
+    .factoid {
+        transform: translate(0, -10%);
+    }
+}
+
+
+/* 4,6 - big */
+@media screen and (max-width: 767px) {
+    .factoid {
+        width: 50%;
+        transform: translate(0, 0%);
+        order: 2;
+    }
+    .catalog__cardWrapper,
+    .catalog__card:hover {
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard) img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .compositions__container .catalog__cardWrapper:nth-child(5), .compositions__container .catalog__cardWrapper:nth-child(6) {
+        margin-left: 0;
+    }
+
+    .compositions__container .catalog__cardWrapper:nth-child(5), .compositions__container .catalog__cardWrapper:nth-child(6), .compositions__container .catalog__cardWrapper:nth-child(4) {
+        margin-top: 0;
+    }
+
+    .compositions__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    
+    .compositions__container .catalog__cardWrapper:nth-child(6) img,
+    .composition__bigCard img {
+        width: 261px!important;
+        height: 261px!important;
+    }
+    
+    
+    .compositions__container .catalog__cardWrapper:nth-child(6),
+    .compositions__container .catalog__cardWrapper:nth-child(6) > .catalog__card,
+    .composition__bigCard > .catalog__card,
+    .composition__bigCard {
+        min-height: 330px!important;
+        border-radius: 1px;
+    }
+    
+    .compositions__container .catalog__cardWrapper:nth-child(6),
+    .compositions__container .catalog__cardWrapper:nth-child(6) .catalog__card:hover,
+    .composition__bigCard {
+        background-image: url(../flowersCatalog/img/bigCardBg.png)!important;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .compositions__container .catalog__cardWrapper:nth-child(1),
+    .compositions__container .catalog__cardWrapper:nth-child(2),
+    .compositions__container .catalog__cardWrapper:nth-child(4) {
+        order: 1;
+    }
+
+    .compositions__container .catalog__cardWrapper:nth-child(4),
+    .compositions__container .catalog__cardWrapper:nth-child(6) {
+        width: 100%;
+    }
+
+    .compositions__container .catalog__cardWrapper {
+        display: block;
+        order: 2;
+        width: 155px;
+        float: initial;
+    }
+
+    .compositions__container .catalog__cardWrapper:not(.composition__bigCard):not(.composition__mediumCard) {
+        min-height: 198px;
+        height: initial;
+    }
+
+    .compositions__container .composition__mediumCard {
+        margin-top: 0;
+    }
+
+    .compositions__container .catalog__cardWrapper {
+        min-height: 198px;
+    }
+}

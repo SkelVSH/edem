@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../flowersCatalog/flowersCatalog.css">
+    <link rel="stylesheet" href="../otherItemsCatalog/otherItemsCatalog.css">
+    <link rel="stylesheet" href="./search.css">
+</head>
+<body>
+
+    <div class="filterMenu container">
+        <div id="flowerCatalog" class="filterItem filter-active">
+            <p class="c-p5 c-link">Цветы и букеты</p>
+            <span class="selectedFiltersCount">1</span>
+        </div>
+        <div id="compositionsCatalog" class="filterItem">
+            <p class="c-p5 c-link">Композиции</p>
+            <span class="selectedFiltersCount">1</span>
+        </div>
+        <div id="homeFlowersCatalog" class="filterItem">
+            <p class="c-p5 c-link">Комнатные растения</p>
+            <span class="selectedFiltersCount">1</span>
+        </div>
+        <div id="outsideFlowersCatalog" class="filterItem">
+            <p class="c-p5 c-link">Уличные растения</p>
+            <span class="selectedFiltersCount">1</span>
+        </div>
+        <div id="otherItemsCatalog" class="filterItem filter-disabled">
+            <p class="c-p5 c-link">Уход и подарки</p>
+        </div>
+        <div class="sort">
+            <p class="c-p5 c-link">Сортировка</p>
+            <img src="../../icons/smallArrow.svg" alt="">
+        </div>
+    </div>
+
+    <div class="catalog__container catalog__container-active catalog__gridContainer flowerCatalog">
+        <div class="catalog__cardWrapper">
+            <div class="catalog__card">
+                <img src="../flowersCatalog/img/card-img.png" alt="">
+                <div class="catalog__card-content">
+                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
+                    <p class="c-p5 catalog__card-existance">в наличии</p>
+                    <p class="c-h3 catalog__card-price">4,50 руб.</p>
+                    <div class="btnWrap catalog__card-hover">
+                        <button class="btn btn-blue">В корзину</button>
+                        <button class="btn btn-gray">Заказ в 1 клик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog__container catalog__gridContainer homeFlowersCatalog">
+        <div class="catalog__cardWrapper">
+            <div class="catalog__card">
+                <img src="../homeFlowers/img/card.png" alt="">
+                <div class="catalog__card-content">
+                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
+                    <p class="c-p5 catalog__card-existance">в наличии</p>
+                    <p class="c-h3 catalog__card-price">4,50 руб.</p>
+                    <div class="btnWrap catalog__card-hover">
+                        <button class="btn btn-blue">В корзину</button>
+                        <button class="btn btn-gray">Заказ в 1 клик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="compositions__container catalog__container catalog__gridContainer catalog__compositions compositionsCatalog">
+        <div class="catalog__cardWrapper">
+            <div class="catalog__card">
+                <img src="../compositionsCatalog/img/card.png" alt="">
+                <div class="catalog__card-content">
+                    <p class="c-p1 catalog__card-title">Роза Кахала</p>
+                    <p class="c-p3 catalog__card-price">от 4,50 руб.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog__container catalog__diffCardsContainer otherItemsCatalog">
+        <div class="catalog__cardWrapper">
+            <div class="catalog__card">
+                <img src="../otherItemsCatalog/img/sm-card.png" alt="">
+                <div class="catalog__card-content">
+                    <p class="c-p2 catalog__card-title">Ваза Серебро</p>
+                    <p class="c-p5 catalog__card-existance">в наличии</p>
+                    <p class="c-h3 catalog__card-price">от 4,50 руб.</p>
+                    <div class="btnWrap catalog__card-hover">
+                        <button class="btn btn-blue">В корзину</button>
+                        <button class="btn btn-gray">Заказ в 1 клик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog__container catalog__gridContainer outsideFlowersCatalog">
+        <div class="catalog__cardWrapper">
+            <div class="catalog__card">
+                <img src="../outsideFlowers/img/card.png" alt="">
+                <div class="catalog__card-content">
+                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
+                    <p class="c-p5 catalog__card-existance">в наличии</p>
+                    <p class="c-p5 catalog__card-hover">Длина, см</p>
+                    <p class="c-h3 catalog__card-price">от 4,50 руб.</p>
+                    <div class="btnWrap catalog__card-hover">
+                        <button class="btn btn-blue">В корзину</button>
+                        <button class="btn btn-gray">Заказ в 1 клик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./search.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+.delivery__tab-container {
+    display: flex;
+    column-gap: 86px;
+}
+
+.delivery__tab {
+    color: var(--main-text-color);
+    position: relative;
+    cursor: pointer;
+}
+
+.delivery__tab:not(:last-child)::after {
+    content: "";
+    background: var(--main-text-color);
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    right: -43px;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+}
+
+.delivery__tab-active {
+    color: var(--main-blue-color);
+}
+
+.delivery__courierInfo_infoConatiner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.delivery__courierInfo_infoBlock:first-child {
+    width: 846px;
+}
+
+.delivery__courierInfo_infoBlock:last-child {
+    width: 365px;
+}
+
+.delivery__courierInfo_infoBlock {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.delivery__courierInfo_infoBlock:last-child > *:first-child {
+    margin-bottom: 20px;
+}
+
+.delivery__courierInfo_zoneColor {
+    border-radius: 7px;
+    width: 60px;
+    height: 15px;
+}
+
+.delivery__courierInfo_zoneBlock {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.delivery__courierInfo_zoneColor-purple {
+    background: #8C9EFF;
+}
+
+.delivery__courierInfo_zoneColor-teal {
+    background: #80DEEA;
+}
+
+.delivery__courierInfo_zoneColor-green {
+    background: #DCE775;
+}
+
+.delivery__infoTabs {
+    margin-top: 75px;
+}
+
+.delivery__minsk_map,
+.map {
+    height: 1400px;
+    height: 817px;
+    background: #000;
+    border-radius: 1px;
+    margin: 40px 0;
+}
+
+.map__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map__description-info {
+    width: 796px;
+}
+
+.delivery__shops {
+    margin-top: 150px;
+}
+
+.delivery__shopsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 50px;
+    margin-top: 75px;
+}
+
+.delivery__shopCard {
+    cursor: pointer;
+}
+
+.delivery__shopCard:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04), 0px 4px 5px rgba(0, 0, 0, 0.03), 0px 1px 10px rgba(0, 0, 0, 0.05);
+    top: -10px;
+    left: -10px;
+    position: relative;
+    width: 453px;
+    border-radius: 1px;
+    padding-bottom: 10px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+}
+
+.delivery__shopCard:hover > *:not(img) {
+    margin-left: 10px;
+}
+
+.delivery__shopCard:hover img {
+    width: 100%;
+    position: relative;
+    margin-bottom: -5px;
+}
+
+.delivery__shopCard:hover .delivery__shopCard-title {
+    color: var(--main-hover-color);
+}
+
+.delivery__shopCard-title {
+    margin: 30px 0;
+}
+
+.delivery__shopCard-clock {
+    margin-top: 20px;
+}
+
+.delivery__shopCard-clock,
+.delivery__shopCard-phone {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.delivery__shopsMap {
+    margin-top: 75px;
+}
+
+.delivery__shopsMap-title {
+    margin-bottom: 40px;
+}
+
+.map,
+.table {
+    display: none;
+}
+
+.delivery__shopsMap .map,
+.delivery__mapTabContent-map .map {
+    display: block;
+}
+
+.delivery__mapTabContent-table .table {
+    display: block;
+}
+
+.table-minskTable {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.table-minskTable__row {
+    padding: 20px 0;
+    border-bottom: 1px solid #E8CDC8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-minskTable__row:first-child {
+    padding-top: 0;
+}
+
+.table-minskTable__row > *:first-child {
+    width: 675px;
+}
+
+.table-minskTable__row > *:nth-child(2) {
+    width: 135px;
+}
+
+.table-minskTable__row > *:nth-child(3) {
+    width: 205px;
+}
+
+.page-minsk {
+    display: none;
+}
+
+.delivery__minskTitle {
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+
+.delivery__minsk_descriptionContainer {
+    display: flex;
+    column-gap: 100px;
+}
+
+.delivery__minsk_descriptionBlock:first-child {
+    width: 358px;
+}
+
+.delivery__minsk_descriptionBlock {
+    width: 675px;
+}
+
+.delivery__minsk_descriptionBlock:first-child > *:not(:first-child) {
+    margin-top: 10px;
+}
+
+.delivery__minsk_descriptionBlock:last-child > *:not(:first-child) {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1439px) {
+    .delivery__courierInfo_infoBlock:first-child {
+        width: 622px;
+    }
+    .delivery__shopCard img {
+        height: 277px;
+        width: 367px;
+    }
+
+    .delivery__shopCard {
+        width: 366px;
+    }
+
+    .delivery__shopCard:hover {
+        width: 386px;
+    }
+
+    .delivery__shopCard:hover img {
+        height: 297px;
+        width: 387px;
+        margin-bottom: -10px;
+    }
+
+}
+
+@media (max-width: 1279px) {
+    .delivery__courierInfo_infoBlock:last-child,
+    .delivery__courierInfo_infoBlock:first-child {
+        width: 100%;
+    }
+    .delivery__shopCard img {
+        width: 330px;
+        height: 249px;
+    }
+
+    .delivery__shopCard {
+        width: 325px;
+    }
+
+    .delivery__shopCard:hover {
+        width: 345px;
+    }
+
+    .delivery__shopCard:hover img {
+        height: 269px;
+        width: 345px;
+        margin-bottom: -10px;
+    }
+
+    .delivery__courierInfo_infoConatiner {
+        flex-direction: column;
+    }
+
+    .delivery__courierInfo_infoBlock:last-child {
+        margin-top: 15px;
+    }
+
+    .map__description-phone {
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .map__description-info {
+        width: 484px;
+    }
+
+    .delivery__minsk_descriptionContainer {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .delivery__minsk_descriptionContainer {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .delivery__tab-container {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    #minskMap,
+    #minskMap *,
+    #shopsLocations,
+    #shopsLocations *,
+    #borisov__zoneLocations,
+    #borisov__zoneLocations * {
+        max-height: 330px!important;
+    }
+
+    .delivery__tab {
+        width: 360px;
+    }
+
+    .map__description {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+    
+    .map__description-info {
+        width: 330px;
+    }
+
+    .delivery__minsk_descriptionBlock * {
+        max-width: 330px;
+    }
+
+    .table-minskTable__row > *:first-child {
+        width: 187px;
+    }
+
+    .table-minskTable__row > *:nth-child(2) {
+        width: 56px;
+    }
+    
+    .table-minskTable__row > *:nth-child(3) {
+        width: 56px;
+    }
+    
+    .page-borisov .delivery__tab-container {
+        flex-direction: row;
+        column-gap: 30px;
+    }
+    
+    .page-borisov .delivery__tab-container .delivery__tab {
+        width: max-content;
+    }
+    .page-borisov .delivery__tab-container .delivery__tab:not(:last-child)::after {
+        right: -20px;
+    }
+}
