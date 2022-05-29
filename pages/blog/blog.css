@@ -15,8 +15,9 @@ body {
 .blog-tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #EFE5E3;
 }
 
 .blog-tags__item {
@@ -26,6 +27,10 @@ body {
   line-height: 120%;
   font-weight: 500;
   letter-spacing: 0.1em;
+}
+
+.blog-tags__item:first-child {
+  margin-left: 0;
 }
 
 .blog-tags__item.active {
@@ -84,7 +89,6 @@ body {
 }
 
 .blog-snippets-item {
-  width: 552px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,7 +104,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: 1px;
   transition: 0.3s;
 }
 
@@ -112,7 +116,7 @@ body {
   left: 0;
   bottom: 0;
   padding: 35px 40px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 1px 1px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -178,18 +182,12 @@ body {
 
 
 @media (min-width: 1280px) {
-  .blog-snippets-item:nth-child(6n+1),
-  .blog-snippets-item:nth-child(6n+4) {
+  .blog-snippets-item {
     width: 100%;
   }
   
-  .blog-snippets-item:nth-child(3n) {
-    margin-left: 50px;
-  }
-  .blog-snippets-item:nth-child(6n+1):hover .blog-snippets-item-desc,
-  .blog-snippets-item:nth-child(6n+4):hover .blog-snippets-item-desc,
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc {
+  .blog-snippets-item:hover .blog-snippets-item-desc,
+  .blog-snippets-item .blog-snippets-item-desc {
     width: 491px;
     height: auto;
     background: none;
@@ -199,91 +197,65 @@ body {
     left: 0;
   }
 
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc *,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc * {
+  .blog-snippets-item .blog-snippets-item-desc *{
     color: #70768A;
   }
 
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc {
-    padding-right: 124px !important;
-  }
-
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc {
-    padding-left: 124px !important;
+  .blog-snippets-item:nth-child(2n) .blog-snippets-item-desc {
     order: -1;
   }
 
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item__img_wrap,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item__img_wrap {
+  .blog-snippets-item .blog-snippets-item__img_wrap {
     width: 679px;
     height: 471px;
   }
 
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc__title,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc__title {
+  .blog-snippets-item .blog-snippets-item-desc__title {
     transition: 0.3s;
     font-size: 25px;
   }
 
-  .blog-snippets-item:nth-child(6n+1):hover .blog-snippets-item-desc__title,
-  .blog-snippets-item:nth-child(6n+4):hover .blog-snippets-item-desc__title {
+  .blog-snippets-item:hover .blog-snippets-item-desc__title {
     color: #6D86CF;
   }
 
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item__img_wrap img,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item__img_wrap img {
+  .blog-snippets-item .blog-snippets-item__img_wrap img {
     width: 100%;
     height: auto;
   }
 
-
-  .blog-snippets-item:nth-child(6n+1):hover .blog-snippets-item__img_wrap,
-  .blog-snippets-item:nth-child(6n+4):hover .blog-snippets-item__img_wrap {
+  .blog-snippets-item:hover .blog-snippets-item__img_wrap {
     width: 699px;
     height: 491px;
   }
 
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc .c-p5,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc .c-p5 {
+  .blog-snippets-item .blog-snippets-item-desc .c-p5 {
     display: block;
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 1440px) {
-  .blog-snippets-item:nth-child(6n+1):hover .blog-snippets-item-desc,
-  .blog-snippets-item:nth-child(6n+4):hover .blog-snippets-item-desc,
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc {
+  .blog-snippets-item:hover .blog-snippets-item-desc,
+  .blog-snippets-item .blog-snippets-item-desc {
     width: 554px;
   }
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc {
-    padding-right: 121px !important;
-  }
 
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc {
-    padding-left: 121px !important;
-  }
-
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item__img_wrap,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item__img_wrap {
+  .blog-snippets-item .blog-snippets-item__img_wrap {
     width: 796px;
     height: 552px;
   }
 
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc__title,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc__title {
+  .blog-snippets-item .blog-snippets-item-desc__title {
     font-size: 30px;
   }
 
-  .blog-snippets-item:nth-child(6n+1):hover .blog-snippets-item__img_wrap,
-  .blog-snippets-item:nth-child(6n+4):hover .blog-snippets-item__img_wrap {
+  .blog-snippets-item:hover .blog-snippets-item__img_wrap {
     width: 816px;
     height: 572px;
   }
 
-  .blog-snippets-item:nth-child(6n+1) .blog-snippets-item-desc .c-p5,
-  .blog-snippets-item:nth-child(6n+4) .blog-snippets-item-desc .c-p5 {
+  .blog-snippets-item .blog-snippets-item-desc .c-p5 {
     margin-bottom: 30px;
   }
 }
@@ -299,10 +271,6 @@ body {
     font-size: 12px;
   }
 
-  .blog-snippets-item {
-    width: 471px;
-  }
-
   .blog-snippets-item-desc {
     width: 471px;
     height: 340px;
@@ -313,17 +281,6 @@ body {
     width: 471px;
     height: 679px;
   }
-
-  .blog-snippets-item:hover .blog-snippets-item__img_wrap {
-    width: 491px;
-    height: 699px;
-  }
-
-  .blog-snippets-item:hover .blog-snippets-item-desc {
-    width: 491px;
-    padding: 40px 35px;
-  }
-
   .blog-snippets-item-desc__title {
     font-size: 20px;
     margin-bottom: 15px;
@@ -332,7 +289,6 @@ body {
   .blog-snippets-item-desc-tags__item {
     font-size: 12px;
   }
-
 }
 
 @media screen and (max-width: 1279.98px) {
@@ -347,7 +303,11 @@ body {
     margin-bottom: 10px;
     font-size: 10px;
   }
-  
+
+  .blog-tags__item:first-child {
+    margin-left: 10px;
+  }
+
   .blog-pagination__item {
     padding-left: 14px;
     padding-right: 14px;

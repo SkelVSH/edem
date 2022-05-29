@@ -37,7 +37,7 @@ img {
 
 .t-link {
   color: #869BD8;
-  font-weight: 500;
+  font-weight: 400;
   transition: 0.3s;
 }
 
@@ -213,7 +213,7 @@ img {
   padding-top: 50px;
   padding-bottom: 85px;
   background: #F6EEEC;
-  border-radius: 15px;
+  border-radius: 1px;
 }
 
 .t-quote__text {
@@ -228,6 +228,10 @@ img {
   font-size: 18px;
   line-height: 150%;
   color: #70768A;
+}
+
+.t-img-block img:not(.semiRound) {
+  border-radius: 1px;
 }
 
 @media (max-width: 1439.98px) {

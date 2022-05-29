@@ -37,6 +37,8 @@ body {
 .documents-item .c-p5 {
   align-self: flex-start;
   margin-top: 25px;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .documents-item:not(:last-child) .documents-item__img {
@@ -88,7 +90,7 @@ body {
   width: 594px;
   height: 700px;
   position: relative;
-  border-radius: 15px;
+  border-radius: 1px;
   background: #FBF9F7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -139,6 +141,7 @@ body {
 
   .documents-item .c-p5 {
     margin-top: 20px;
+    font-size: 16px;
   }
 
   .documents_popup {
@@ -175,6 +178,7 @@ body {
 
   .documents-item .c-p5 {
     margin-top: 10px;
+    font-size: 14px;
   }
 
   .documents-item:hover .documents-item__img_wrap,
@@ -197,7 +201,7 @@ body {
     height: 844px;
     background: #F6EEEC;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 50px 50px 0px 0px;
     transform: translateY(844px);
     transition: 0.3s;
   }
@@ -212,7 +216,7 @@ body {
   }
 
   .documents_popup__wrap.fade .documents_popup {
-    transform: translateY(1px);
+    transform: translateY(8px);
   }
 
   .bottomMenu.hide_borders {
@@ -248,8 +252,11 @@ body {
   }
 
   .documents_popup {
-    height: 525px;
-    transform: translateY(525px);
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 60px;
+    transform: translateY(100%);
+    border-radius: 25px 25px 0px 0px;
   }
 
   .documents_popup__wrap {
@@ -267,5 +274,8 @@ body {
   }
   .documents_popup::after {
     width: 330px;
+  }
+  .documents_popup__wrap.fade .documents_popup {
+    transform: translateY(-15px);
   }
 }

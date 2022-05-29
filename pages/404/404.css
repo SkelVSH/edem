@@ -26,7 +26,7 @@ body::before {
   width: fit-content;
   padding: 15px 30px;
   background: #869BD8;
-  border-radius: 10px;
+  border-radius: 1px;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.05em;
@@ -36,7 +36,7 @@ body::before {
 
 .page_404__button:hover {
   background: #6D86CF;
-  border-radius: 7px;
+  border-radius: 1px;
 }
 
 .page_404__button:active {

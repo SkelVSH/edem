@@ -80,63 +80,64 @@ input {
 }
 
 .c-h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 130%;
 }
 
 .c-h2 {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 130%;
 }
 
 .c-h3 {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 130%;
 }
 
 .c-h4 {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 130%;
 }
 
 .c-p1 {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 150%;
 }
 
 .c-p2 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 150%;
 }
 
 .c-p3 {
-    font-weight: normal;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 24px;
     line-height: 150%;
 }
 
 .c-p4 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 150%;
 }
 
 .c-p5 {
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 150%;
 }
 
 .c-p6 {
-    font-weight: normal;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 150%;
 }
 
 .c-p7 {
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 150%;
 }
 
@@ -394,26 +395,11 @@ span:hover .icon:active {
         font-size: 20px;
         line-height: 150%;
     }
-    .c-p4 {
-        font-weight: 500;
+    .c-p4, .c-p5 {
         font-size: 16px;
         line-height: 150%;
     }
-    .c-p5 {
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 150%;
-    }
-    .c-h3 {
-        font-size: 25px;
-    }
-    .c-p6 {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 150%;
-    }
-    .c-p7 {
-        font-weight: normal;
+    .c-p6, .c-p7 {
         font-size: 14px;
         line-height: 150%;
     }
@@ -469,37 +455,27 @@ span:hover .icon:active {
         width: 700px;
     }
     .c-h1 {
-        font-size: 25px;
-        line-height: 130%;
+        font-size: 20px;
     }
     .c-h2 {
         font-size: 18px;
-        line-height: 130%;
     }
-    .c-h3 {
-        font-size: 14px;
-    }
-    .c-h4 {
+    .c-h3, .c-h4 {
         font-size: 14px;
     }
     .c-p1 {
         font-size: 18px;
     }
-    .c-p4 {
-        font-size: 12px;
-        line-height: 150%;
-    }
-    .c-p5 {
-        font-size: 12px;
-        line-height: 150%;
-    }
-    .c-p6 {
-        font-size: 10px;
-        line-height: 150%;
-    }
     .c-p3, .c-p2 {
         font-size: 14px;
     }
+    .c-p4, .c-p5 {
+        font-size: 12px;
+    }
+    .c-p6, .c-p7 {
+        font-size: 10px;
+    }
+    
     .c-tags {
         font-weight: 500;
         font-size: 10px;
