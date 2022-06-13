@@ -12,6 +12,7 @@ body {
     margin-right: 121px;
     float: left;
     object-fit: cover;
+    border-radius: 1px;
 }
 
 .card__mainContent {
@@ -31,7 +32,9 @@ body {
     color: #70768A!important;
 }
 
-
+.card__compound {
+    margin-top: 50px;
+}
 
 .breadContainer {
     display: flex;
@@ -45,10 +48,6 @@ body {
     margin: 0 10px;
 }
 
-.breadItem:last-child {
-    width: 100%;
-}
-
 .card__mainInfoBlock-existance {
     margin-top: 10px;
 }
@@ -56,9 +55,9 @@ body {
 .card__mainInfoBlock-modBlock {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
     row-gap: 12px;
-    column-gap: 1px;
+    column-gap: 10px;
+    margin-top: 50px;
 }
 
 .card__mainInfoBlock-modBlockImgItem {
@@ -102,7 +101,15 @@ body {
     border-radius: 1px;
     cursor: pointer;
     text-align: center;
-    padding: 8px 9px 8px 10px
+    padding: 8px 9px 8px 10px;
+}
+
+.card__mainInfoBlock-modBlockItem:first-child {
+    margin-left: 0;
+}
+
+.card__mainInfoBlock-modBlockItem:last-child {
+    margin-right: 0;
 }
 
 .card__mainInfoBlock-modBlockItem:hover {
@@ -125,8 +132,13 @@ body {
     cursor: pointer; 
 }
 
-.card__mainInfoBlock-description,
+.card__mainInfoBlock-description {
+    margin-top: 40px;
+}
+
 .card__mainInfoBlock-submitBlock {
+    display: flex;
+    column-gap: 10px;
     margin-top: 40px;
 }
 
@@ -137,11 +149,9 @@ body {
 
 .cardFactoid {
     margin-top: 120px;
-    background: #70768A;
+    background-color: rgba(246, 238, 236, 0.5);
     border-radius: 1px;
     padding: 90px 121px;
-    width: 1158px;
-
     display: flex;
     align-items: center;
     column-gap: 102px;
@@ -151,9 +161,6 @@ body {
     width: 502px;
 }
 
-.cardFactoid__mainInfo > * {
-    color: #F6EEEC;
-}
 
 .cardFactoid__mainInfo-title {
     font-size: 50px;
@@ -202,6 +209,7 @@ body {
 .examples__bigImg {
     width: 100%;
     margin-top: 75px;
+    border-radius: 1px;
 }
 
 .examples__block-img {
@@ -246,10 +254,6 @@ body {
     display: block;
 }
 
-.shopTips__item-title.c-link {
-    color: var(--main-text-color);
-}
-
 .shopTips__item-description {
     margin-top: 10px;
 }
@@ -270,49 +274,6 @@ body {
     margin: auto;
 }
 
-.careTips__wrapper {
-    height: 1520px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 75px;
-    margin-top: 100px;
-}
-
-.careTips__wrapper > img {
-    width: fit-content;
-}
-
-.careTips__tipsWrap {
-    width: 554px;
-}
-
-.careTips__tipsWrap .c-p2 {
-    font-weight: 500;
-}
-
-.careTips__tipsWrap {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-}
-
-
-
-.careTips__tipsWrap:nth-child(2),
-.careTips__tipsWrap:nth-child(6) {
-    margin-left: 121px;
-}
-
-.careTips__tipsWrap:nth-child(4) {
-    margin-top: 75px;
-}
-
-.careTips__wrapper > img:nth-child(5) {
-    align-self: flex-end;
-}
-
 .youtube {
     height: 470px;
     margin-top: 150px;
@@ -326,7 +287,6 @@ body {
 .youtube__videoBlock {
     width: 675px;
     height: 470px;
-    background: #000;
     border-radius: 1px;
 }
 
@@ -380,14 +340,16 @@ body {
 }
 
 .instagram {
-    background: #70768A;
-    border-radius: 1px;
+    background: #70768A;   
+}
+
+.instagram .container {
     display: flex;
     margin: 120px auto;
     align-items: center;
 }
 
-.instagram > p {
+.instagram .container > p {
     margin-left: 100px;
     width: 362px;
     color: #F6EEEC;
@@ -402,6 +364,35 @@ body {
     border-radius: 1px 0 0 1px;
 }
 
+.card__mainInfoBlock .c-h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.careTips__wrapper {
+    width: 1258px;
+    margin: auto;
+}
+
+.careTips__tipsWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.careTips__tipsWrap img {
+    border-radius: 1px;
+}
+
+.careTips__tipsWrap:nth-child(2n+1) .careTips__text {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.careTips__tipsWrap:nth-child(2n) .careTips__text {
+    margin-left: 50px;
+}
 
 @media (max-width: 1439px) {
     .card__mainInfoBlock-description {
@@ -415,10 +406,6 @@ body {
 
     .breadItem {
         font-size: 12px;
-    }
-    
-    .breadItem:last-child {
-        font-size: 40px;
     }
 
     .breadContainer {
@@ -475,34 +462,8 @@ body {
         width: 786px;
     }
     
-    .careTips__wrapper > img:nth-child(5),
-    .careTips__wrapper > img:first-child {
-        width: 521px;
-    }
-
-    .careTips__wrapper > img:nth-child(3) {
-        width: 625px;
-    }
-
     .card__container {
         width: 992px;
-    }
-
-    .careTips__tipsWrap:nth-child(2), .careTips__tipsWrap:nth-child(6) {
-        margin-left: 104px;
-    }
-
-    .careTips__tipsWrap {
-        width: 471px;
-    }
-
-    .careTips__wrapper {
-        height: 1275px;
-        row-gap: 50px;
-    }
-
-    .careTips__tipsWrap:nth-child(4) {
-        margin-top: 30px;
     }
 
     .youtube__videoBlock {
@@ -616,33 +577,6 @@ body {
         margin-top: 40px;
         font-size: 14px;
         line-height: 150%;
-    }
-
-    .careTips__tipsWrap:nth-child(2), .careTips__tipsWrap:nth-child(6) {
-        margin-left: 0;
-    }
-
-    .careTips__tipsWrap,
-    .careTips__wrapper > img:nth-child(3),
-    .careTips__wrapper > img:nth-child(5), .careTips__wrapper > img:first-child {
-        width: 330px;
-    }
-
-
-    .careTips__tipsWrap .c-p1 {
-        font-size: 18px;
-        line-height: 27px;
-    }
-    
-    .careTips__tipsWrap .c-p3,
-    .careTips__tipsWrap .c-p2 {
-        font-size: 14px;
-        line-height: 21px;
-    }
-
-    .careTips__wrapper {
-        height: 855px;
-        row-gap: 40px;
     }
 
     .card__container {
@@ -759,35 +693,6 @@ body {
 
     .shopTips__itemContainer {
         margin-left: 45px;
-    }
-
-    .careTips__wrapper {
-        height: initial;
-    }
-
-    .careTips__wrapper > img:first-child {
-        order: 1;
-    }
-
-    .careTips__wrapper > .careTips__tipsWrap:nth-child(4) {
-        order: 2;
-    }
-
-    .careTips__wrapper > img:nth-child(3) {
-        order: 3;
-    }
-
-    
-    .careTips__wrapper > .careTips__tipsWrap:nth-child(2) {
-        order: 4;
-    }
-
-    .careTips__wrapper > img:nth-child(5) {
-        order: 5;
-    }
-
-    .careTips__wrapper > .careTips__tipsWrap:nth-child(6) {
-        order: 6;
     }
 
     .youtube {

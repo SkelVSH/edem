@@ -6,6 +6,9 @@
     --main-blue-color: #869BD8;
 }
 
+img {
+    vertical-align: bottom;
+}
 
 * {
     margin: 0;
