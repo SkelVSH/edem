@@ -40,6 +40,7 @@
 
 .about-head-img {
   display: flex;
+  align-items: flex-start;
 }
 
 .about-head-img img:first-child {
@@ -88,6 +89,8 @@
   width: 554px;
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .about-mission-desc > .c-p3 {
@@ -192,4 +195,360 @@
   width: fit-content;
   margin-bottom: 15px;
   margin-top: 40px;
+}
+
+@media (max-width: 1439px) {
+  .about-head {
+    margin-bottom: 20px;
+  }
+
+  .about-head-main .c-p7 {
+    width: 397px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .about-head-main .c-link {
+    width: 271px;
+  }
+
+  .about-head-main .c-link img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .about-head-main .c-link:last-child {
+    margin-top: 30px;
+  }
+
+  .about-head-img img:first-child {
+    width: 317px;
+    margin-right: -49px;
+    margin-top: 65px;
+    margin-bottom: -34px;
+  }
+
+  .about-head-main {
+    width: 430px;
+  }
+
+  .about-head-img img:last-child {
+    width: 424px;
+  }
+
+  .about-bread {
+    margin-bottom: 75px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .about-mission {
+    margin-bottom: 75px;
+  }
+
+  .about-mission > img {
+    width: 625px;
+  }
+
+  .about-mission-desc {
+    width: 471px;
+    padding-right: 54px;
+  }
+
+  .about-mission-desc > .c-p3 {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .about-mission-desc-bottom__item {
+    margin-bottom: 40px;
+  }
+
+  .about-mission-desc-bottom__item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-mission-desc-bottom__item p {
+    width: auto;
+  }
+
+  .about-mission-desc-bottom__item:first-child p {
+    width: 274px;
+  }
+
+  .about-offer {
+    margin-bottom: 75px;
+  }
+
+  .about-offer__main {
+    width: 698px;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-bottom: 75px;
+    margin: 0;
+  }
+
+  .about-offer-col {
+    width: 300px;
+  }
+
+  .about-offer-col:last-child {
+    width: 323px;
+  }
+
+  .about-offer__main .c-h2 {
+    margin-bottom: 50px;
+  }
+
+  .about-offer-col__item {
+    margin-bottom: 40px;
+  }
+
+  .about-offer img {
+    height: 514px;
+  }
+
+  .about-img {
+    margin-bottom: 120px;
+  }
+
+  .about-services .c-h2 {
+    margin-bottom: 50px;
+  }
+
+  .about-services-item {
+    width: 263px;
+  }
+
+  .about-services-item > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about-services-item a {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .about-head-main {
+    padding-top: 40px;
+    width: 330px;
+  }
+
+  .about-head-main .c-p7 {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .about-head-main .c-link {
+    width: 226px;
+  }
+
+  .about-head-main .c-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  .about-head-img img:last-child {
+    display: none;
+  }
+
+  .about-head-img img:first-child {
+    width: 274px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .about-bread {
+    font-size: 10px;
+    line-height: 150%;
+    margin-bottom: 60px;
+  }
+
+  .about-mission {
+    margin-bottom: 60px;
+  }
+
+  .about-mission > img {
+    width: 330px;
+  }
+
+  .about-mission-desc {
+    width: 330px;
+    padding: 0;
+  }
+
+  .about-mission-desc > .c-p3 {
+    margin-top: 10px;
+  }
+
+  .about-mission-desc-bottom__item {
+    margin-bottom: 30px;
+  }
+
+  .about-mission-desc-bottom__item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+
+ .about-mission-desc-bottom__item p {
+    width: 238px;
+  }
+
+  .about-mission-desc-bottom__item:first-child p {
+    width: 206px;
+  }
+  
+  .about-offer {
+    margin-bottom: 60px;
+    overflow: hidden;
+  }
+
+  .about-offer__main {
+    width: 511px;
+    padding-top: 40px;
+    padding-left: 23px;
+    padding-bottom: 40px;
+  }
+
+  .about-offer__main .c-h2 {
+    margin-bottom: 40px;
+  }
+
+  .about-offer-col {
+    width: 214px;
+  }
+
+  .about-offer-col:last-child {
+    width: 234px;
+  }
+
+  .about-offer-col__item {
+    margin-bottom: 30px;
+  }
+
+  .about-offer img {
+    height: 381px;
+    right: -120px;
+  }
+
+  .about-img {
+    margin-bottom: 80px;
+  }
+
+  .about-services .c-h2 {
+    margin-bottom: 40px;
+  }
+
+  .about-services-item > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-services-item a {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  .about-services-item {
+    width: 155px;
+  }
+
+  .about-head .container {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .about-head-img img:first-child {
+    width: 280px;
+  }
+
+  .about-head-main {
+    padding-top: 20px;
+  }
+
+  .about-head-main {
+    margin-bottom: 40px;
+  }
+
+  .about-head-main .c-link:last-child {
+    margin-top: 20px;
+  }
+
+  .about-bread {
+    margin-bottom: 20px;
+  }
+
+  .about-mission {
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .about-mission-desc {
+    order: -1;
+  }
+
+  .about-mission-desc-bottom {
+    margin-top: 370px;
+  }
+
+  .about-mission > img {
+    position: absolute;
+    left: 0;
+    top: 137px;
+  }
+
+  .about-offer__main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about-offer img {
+    display: none;
+  }
+
+  .about-offer {
+    background-image: url(./img/offer-mobile.png);
+    background-repeat: no-repeat;
+  }
+
+  .about-offer__main .c-h2 {
+    margin-bottom: 30px;
+  }
+
+  .about-offer-col {
+    width: 234px !important;
+  }
+
+  .about-offer-col:last-child {
+    margin-top: 20px;
+  }
+
+  .about-offer-col__item {
+    margin-bottom: 20px;
+  }
+
+  .about-offer {
+    margin-bottom: 40px;
+  }
+
+  .about-img {
+    margin-bottom: 60px;
+  }
+
+  .about-services {
+    row-gap: 40px;
+  }
+
+  .about-services .c-h2 {
+    margin-bottom: 0;
+  }
 }

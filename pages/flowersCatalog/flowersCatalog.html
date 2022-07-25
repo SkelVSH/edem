@@ -609,199 +609,247 @@
         <button class="btn btn-blue">Сбросить фильтры</button>
     </div>
 
-    <div class="catalog__container catalog__gridContainer">
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">в наличии</p>
-                    <p class="c-h3 catalog__card-price">4,50 руб.</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-blue">В корзину</button>
-                        <button class="btn btn-gray">Заказ в 1 клик</button>
+    <div class="catalog__container">
+        <div class="snippet__wrap">
+            <div class="snippet" data-id="1">
+                <a href="#" class="snippet-img">
+                    <img src="./img/snippet.png" alt="">
+                </a>
+                <div class="snippet-desc">
+                    <a href="#" class="snippet-desc__name c-p4">Роза Кахала</a>
+                    <p class="snippet-desc__status js-snippet-status">в наличии</p>
+                    <p class="snippet-desc__price">от 4,5 руб.</p>
+                </div>
+                <div class="snippet-full">
+                    <p class="s-par">Длина, см</p>
+                    <div class="snippet-switch c-p7 js-snippet-switch">
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="30" class="disabled">
+                            <span>30</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="40" checked>
+                            <span>40</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="50">
+                            <span>50</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="60">
+                            <span>60</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="70" class="disabled">
+                            <span>70</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="80" class="disabled">
+                            <span>80</span>
+                        </label>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">в наличии</p>
-                    <p class="c-h3 catalog__card-price">от 4,50 руб.</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-blue">В корзину</button>
-                        <button class="btn btn-gray">Заказ в 1 клик</button>
+                    <p class="snippet-desc__price js-snippet-price">4,5 руб.</p>
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-stock active">
+                        <span class="btn btn-blue js-add-to-cart">В корзину</span>
+                        <span class="btn btn-gray">В 1 клик</span>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">под заказ до 5 дней</p>
-                    <p class="c-h3 catalog__card-newPrice"><span class="catalog__card-oldPrice">от 4,50 руб.</span> от 4,50 руб.</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-blue">В корзину</button>
-                        <button class="btn btn-gray">Заказ в 1 клик</button>
-                    </div>
-                </div>
-                <span class="catalog__card-discount">
-                    -10%
-                </span>
-            </div>
-        </div>
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">нет в наличии</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-gray">Подробнее</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__card catalog__bigCard">
-            <img src="./img/bigCardImg.png" alt="">
-            <div class="catalog__card-content">
-                <p class="c-p1 catalog__card-title">Роза Кахала</p>
-                <p class="c-p3 catalog__card-existance">в наличии</p>
-                <p class="c-h2 catalog__card-price">от 4,50 руб.</p>
-                <div class="btnWrap catalog__card-hover">
-                    <button class="btn btn-blue">В корзину</button>
-                    <button class="btn btn-gray">Заказ в 1 клик</button>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">в наличии</p>
-                    <p class="c-h3 catalog__card-price">от 4,50 руб.</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-blue">В корзину</button>
-                        <button class="btn btn-gray">Заказ в 1 клик</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="factoid">
-            <div class="factoid-content">
-                <img class="factoid-img" src="./img/factoid-black.svg" alt="">
-                <h2 class="c-h3 factoid-title">Цветы без повода радуют особенно</h2>
-                <p class="c-p5 factoid__description">Чтобы подарить радость, не&nbsp;нужно ждать праздника. Пусть&nbsp;свежие цветы станут привычным проявлением любви&nbsp;в&nbsp;вашем доме.</p>
-                <div class="dot"></div>
-            </div>
-        </div>
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">в наличии</p>
-                    <p class="c-h3 catalog__card-price">от 4,50 руб.</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-blue">В корзину</button>
-                        <button class="btn btn-gray">Заказ в 1 клик</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">в наличии</p>
-                    <p class="c-h3 catalog__card-price">от 4,50 руб.</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-blue">В корзину</button>
-                        <button class="btn btn-gray">Заказ в 1 клик</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">в наличии</p>
-                    <p class="c-h3 catalog__card-price">от 4,50 руб.</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-blue">В корзину</button>
-                        <button class="btn btn-gray">Заказ в 1 клик</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="catalog__cardWrapper">
-            <div class="catalog__card">
-                <img src="./img/card-img.png" alt="">
-                <div class="catalog__card-content">
-                    <p class="c-p2 catalog__card-title">Роза Кахала</p>
-                    <p class="c-p5 catalog__card-existance">в наличии</p>
-                    <p class="c-h3 catalog__card-price">от 4,50 руб.</p>
-                    <div class="btnWrap catalog__card-hover">
-                        <button class="btn btn-blue">В корзину</button>
-                        <button class="btn btn-gray">Заказ в 1 клик</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal-filter__wrap">
-        <div class="container">
-            <ul class="modal-filter">
-                <li>
-                    <a class="c-p6">сначала популярные</a>
-                </li>
-                <li>
-                    <a class="c-p6">сначала подешевле</a>
-                </li>
-                <li>
-                    <a class="c-p6">сначала подороже</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-order">
+                        <span class="btn btn-blue">Заказать</span>
+                    </div>
 
-    <div class="catalog__container promotionContainer">
-        <img src="./img/promotion.png" alt="">
-        <div class="promotion__contentBlock-wrap">
-            <div class="promotion__contentBlock">
-                <img src="./img/factoid-black.svg" alt="">
-                <h2 class="c-h2">Дарите себе сюрпризы чаще</h2>
-                <p class="c-p3 promotion__description">Свежие цветы создают дома приятную обстановку и дарят упоительный аромат.</p>
-                <div class="dot"></div>
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-in_cart">
+                        <a href="#" class="btn btn-blue">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet__wrap">
+            <div class="snippet" data-id="1">
+                <a href="#" class="snippet-img">
+                    <img src="./img/snippet.png" alt="">
+                </a>
+                <div class="snippet-desc">
+                    <a href="#" class="snippet-desc__name c-p4">Роза Кахала</a>
+                    <p class="snippet-desc__status js-snippet-status">в наличии</p>
+                    <p class="snippet-desc__price">от 4,5 руб.</p>
+                </div>
+                <div class="snippet-full">
+                    <p class="snippet-desc__price js-snippet-price">4,5 руб.</p>
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-stock active">
+                        <span class="btn btn-blue js-add-to-cart">В корзину</span>
+                        <span class="btn btn-gray">В 1 клик</span>
+                    </div>
+
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-in_cart">
+                        <a href="#" class="btn btn-blue">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet__wrap">
+            <div class="snippet" data-id="1">
+                <a href="#" class="snippet-img">
+                    <img src="./img/snippet.png" alt="">
+                </a>
+                <div class="snippet-desc">
+                    <a href="#" class="snippet-desc__name c-p4">Роза Кахала</a>
+                    <p class="snippet-desc__status js-snippet-status">в наличии</p>
+                    <p class="snippet-desc__price">от 4,5 руб.</p>
+                </div>
+                <div class="snippet-full">
+                    <p class="snippet-desc__price js-snippet-price">4,5 руб.</p>
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-order active">
+                        <span class="btn btn-blue">Заказать</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet__wrap factoid">
+            <img src="../../icons/factoid-img.svg" alt="">
+            <p class="factoid__title">Цветы без повода радуют особенно</p>
+            <p class="factoid__text">Чтобы подарить радость, не&nbsp;нужно ждать праздника. Пусть свежие цветы станут привычным проявлением любви в&nbsp;вашем доме.</p>
+        </div>
+
+        <div class="snippet__wrap big">
+            <div class="snippet" data-id="1">
+                <a href="#" class="snippet-img">
+                    <img src="./img/snippet-big.png" alt="">
+                </a>
+                <div class="snippet-desc">
+                    <a href="#" class="snippet-desc__name c-p4">Роза Кахала</a>
+                    <p class="snippet-desc__status js-snippet-status">в наличии</p>
+                    <p class="snippet-desc__price">от 4,5 руб.</p>
+                </div>
+                <div class="snippet-full">
+                    <p class="snippet-desc__price js-snippet-price">4,5 руб.</p>
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-order active">
+                        <span class="btn btn-blue">Заказать</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet__wrap big">
+            <div class="snippet" data-id="1">
+                <a href="#" class="snippet-img">
+                    <img src="./img/snippet-big.png" alt="">
+                </a>
+                <div class="snippet-desc">
+                    <a href="#" class="snippet-desc__name c-p4">Роза Кахала</a>
+                    <p class="snippet-desc__status js-snippet-status">в наличии</p>
+                    <p class="snippet-desc__price">от 4,5 руб.</p>
+                </div>
+                <div class="snippet-full">
+                    <p class="s-par">Длина, см</p>
+                    <div class="snippet-switch c-p7 js-snippet-switch">
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="30" class="disabled">
+                            <span>30</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="40" checked>
+                            <span>40</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="50">
+                            <span>50</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="60">
+                            <span>60</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="70" class="disabled">
+                            <span>70</span>
+                        </label>
+                        <label class="snippet-switch__label">
+                            <input type="radio" name="length" value="80" class="disabled">
+                            <span>80</span>
+                        </label>
+                    </div>
+                    <p class="snippet-desc__price js-snippet-price">4,5 руб.</p>
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-stock active">
+                        <span class="btn btn-blue js-add-to-cart">В корзину</span>
+                        <span class="btn btn-gray">В 1 клик</span>
+                    </div>
+
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-order">
+                        <span class="btn btn-blue">Заказать</span>
+                    </div>
+
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-in_cart">
+                        <a href="#" class="btn btn-blue">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet__wrap big">
+            <div class="snippet" data-id="1">
+                <a href="#" class="snippet-img">
+                    <img src="./img/snippet-big.png" alt="">
+                </a>
+                <div class="snippet-desc">
+                    <a href="#" class="snippet-desc__name c-p4">Роза Кахала</a>
+                    <p class="snippet-desc__status js-snippet-status">в наличии</p>
+                    <p class="snippet-desc__price">от 4,5 руб.</p>
+                </div>
+                <div class="snippet-full">
+                    <p class="snippet-desc__price js-snippet-price">4,5 руб.</p>
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-stock active">
+                        <span class="btn btn-blue js-add-to-cart">В корзину</span>
+                        <span class="btn btn-gray">В 1 клик</span>
+                    </div>
+
+                    <div class="snippet-full__buttons js-snippet-buttons js-snippet-buttons-in_cart">
+                        <a href="#" class="btn btn-blue">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="factoid--wide">
+            <img src="./img/factoid-wide.png" alt="">
+            <div class="factoid--wide__main">
+                <img src="../../icons/factoid-img.svg" alt="">
+                <p class="factoid--wide__title">Дарите себе сюрпризы чаще</p>
+                <p class="c-p5">Свежие цветы создают дома приятную обстановку и&nbsp;дарят упоительный аромат.</p>
             </div>
         </div>
     </div>
 
     <div class="paging__container">
-        <span class="paging__item paging__item-activePage c-p2">
-            <a href="">1</a>
+        <span class="paging__item paging__item--border c-p5">
+            <a class="c-link" href="">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 6L8 10L11 14" stroke="#869BD8" stroke-linecap="round"/>
+                </svg>
+                Назад
+            </a>
         </span>
-        <span class="paging__item c-p2">
-            <a href="">1</a>
+        <span class="paging__item paging__item-activePage c-p5">
+            <a class="c-link" href="">1</a>
         </span>
-        <span class="paging__item c-p2">
-            <a href="">1</a>
+        <span class="paging__item c-p5">
+            <a class="c-link" href="">2</a>
         </span>
-        <span class="paging__item c-p2">
-            <a href="">1</a>
+        <span class="paging__item c-p5">
+            <a class="c-link" href="">3</a>
         </span>
-        <span class="paging__item c-p2">
-            <a href=""><span>ещё 18 вариантов</span> ></a>
+        <span class="paging__item c-p5">
+            <a class="c-link" href="">4</a>
+        </span>
+        <span class="paging__item paging__item--border c-p5  ">
+            <a class="c-link" href="">
+                Далее
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 14L12 10L9 6" stroke="#869BD8" stroke-linecap="round"/>
+                </svg>
+            </a>
         </span>
     </div>
 
@@ -934,8 +982,60 @@
         </div>
     </div>
 
+    <script>
+    const PRICE_TABLE = [
+        {
+        id: 1,
+        modifications: [
+            {
+                length: 30,
+                status: "none",
+                printStatus: "нет в наличии",
+                price: 0,
+                printPrice: ""
+            },
+            {
+                length: 40,
+                printStatus: "в наличии",
+                status: "stock",
+                printPrice: "4,5 руб.",
+                price: 4.5
+            },
+            {
+                length: 50,
+                printStatus: "в наличии",
+                status: "stock",
+                printPrice: "5,5 руб.",
+                price: 5.5
+            },
+            {
+                length: 60,
+                printStatus: "в наличии",
+                status: "stock",
+                printPrice: "6,5 руб.",
+                price: 6.5
+            },
+            {
+                length: 70,
+                printStatus: "под заказ",
+                status: "order",
+                printPrice: "7,5 руб.",
+                price: 7.5
+            },
+            {
+                length: 80,
+                printStatus: "под заказ",
+                status: "order",
+                printPrice: "8,5 руб.",
+                price: 8.5
+            }
+        ]
+        }
+    ]
+    </script>
     <script src="../../js/multirange.js"></script>
     <script src="../header-footer/header-footer.js"></script>
     <script src="./flowersCatalog.js"></script>
+    <script src="../../js/snippet.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ img {
     box-sizing: border-box;
 }
 
-/* 
+
 body::before {
     content: "";
     position: absolute;
@@ -26,7 +26,7 @@ body::before {
     height: 500px;
     z-index: -1;
     width: 100%;
-} */
+} 
 
 body {
     z-index: 2;
@@ -340,10 +340,8 @@ span:hover .icon:active {
 }
 
 .breadContainer > .container .breadItem {
-    font-size: 12px;
-    line-height: 120%;
-
-    font-family: 'Comfortaa';
+    font-size: 14px;
+    line-height: 150%;
     color: #70768A;
 }
 

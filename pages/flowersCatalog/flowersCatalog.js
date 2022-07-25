@@ -1,4 +1,4 @@
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', () => {
     const filterItems = document.querySelectorAll('.filterItem');
     const filterModalOutside = document.querySelector('.filterMenu__modalOutside')
     const filterButton = document.querySelector('.filterButton');
@@ -103,4 +103,4 @@ window.onload = () => {
         })
         const filterItems = document.querySelectorAll('.sideMenu__filter').forEach(item => item.addEventListener('click', sideMenuFilterClick));
     }
-}
+})
